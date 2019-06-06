@@ -1462,7 +1462,7 @@ All uses of astrncat were incorrect (passing full buffer size instead of remaini
 r2105 | adk0212 | 2014-03-24 22:52:10 -0400 (Mon, 24 Mar 2014) | 3 lines
 
 Global replace of astrcpy with strlcpy
-Same behavor (aside from return value) but strlcpy is standardized
+Same behavior (aside from return value) but strlcpy is standardized
 
 ------------------------------------------------------------------------
 r2104 | adk0212 | 2014-03-24 22:47:47 -0400 (Mon, 24 Mar 2014) | 4 lines
