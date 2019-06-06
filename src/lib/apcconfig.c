@@ -636,7 +636,7 @@ void check_for_config(UPSINFO *ups, char *cfgfile)
       }
 
       /*
-       * Here we have read alredy the first line of configuration
+       * Here we have read already the first line of configuration
        * so there may be the case where the first line is a config
        * parameter and we must not discard it reading another line.
        * Jump into the reading configuration loop.
