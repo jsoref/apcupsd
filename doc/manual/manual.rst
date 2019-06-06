@@ -3988,7 +3988,7 @@ completely or left empty to accept the default.
 - *community*: The read-write community string, usually "private". You can
   specify a read-only community string, usually "public", if you do not
   require killpower support. If the community string is omitted, apcupsd will
-  attempt to autotedect by trying "private" and "public".
+  attempt to autodetect by trying "private" and "public".
   (optional, default: autodetect).
 
 A NIS Server/Client (Master/Slave) configuration 
