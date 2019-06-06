@@ -2475,7 +2475,7 @@ remaining runtime on the batteries. This can be done by examining
 the values of the ``BATTCHG`` and ``TIMELEFT`` variables in the
 printout of '``apcaccess status``'.
 
-Athough this should not be necessary, as an extra precaution, you
+Although this should not be necessary, as an extra precaution, you
 can shutdown your machine, remove the plug from the UPS you are
 testing, and plug your machine into another UPS or directly into
 the wall. Doing so, will ensure that the UPS doesn't cut the power
