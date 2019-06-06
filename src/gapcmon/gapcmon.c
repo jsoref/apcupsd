@@ -365,7 +365,7 @@ static gboolean lg_graph_data_series_add_value (PLGRAPH plg, gint i_series_numbe
 
 /*
  * A shutdown routine
- * destroys all the data series and any assocaited dynamic data
+ * destroys all the data series and any associated dynamic data
 */
 static gboolean lg_graph_data_series_remove_all (PLGRAPH plg)
 {
