@@ -2304,7 +2304,7 @@ static gint sknet_net_write_nbytes (GIOChannel * ioc, gchar * ptr, gsize nbytes)
  * Returns number of bytes sent
  * Returns -1 on error
  */
-static gint sknet_net_send (GIOChannel * ioc, gchar * buff, gsize len)
+static gint sknet_net_send (GIOChannel * ioc, gchar * buf, gsize len)
 {
   gint rc = 0;
   gshort pktsiz = 0;
@@ -2319,7 +2319,7 @@ static gint sknet_net_send (GIOChannel * ioc, gchar * buff, gsize len)
   }
 
   /* send data packet */
-  rc = sknet_net_write_nbytes (ioc, buff, len);
+  rc = sknet_net_write_nbytes (ioc, buf, len);
   if (rc != len)
   {
     sknet_util_log_msg ("sknet_net_send", "send message buffer", "failed");
@@ -2389,7 +2389,7 @@ static gint sknet_net_read_nbytes (GIOChannel * ioc, gchar * ptr, gsize nbytes)
  * Returns -1 on hard end of file (i.e. network connection close)
  * Returns -2 on error
  */
-static gint sknet_net_recv (GIOChannel * ioc, gchar * buff, gsize maxlen)
+static gint sknet_net_recv (GIOChannel * ioc, gchar * buf, gsize maxlen)
 {
   gint nbytes = 0;
   gshort pktsiz = 0;
@@ -2421,7 +2421,7 @@ static gint sknet_net_recv (GIOChannel * ioc, gchar * buff, gsize maxlen)
   }
 
   /* now read the actual data */
-  nbytes = sknet_net_read_nbytes (ioc, buff, pktsiz);
+  nbytes = sknet_net_read_nbytes (ioc, buf, pktsiz);
   if (nbytes <= 0)
   {
     sknet_util_log_msg ("sknet_net_recv", "read message", "failed");
@@ -2505,13 +2505,13 @@ static GIOChannel *sknet_net_open (PSKCOMM psk)
     if ( nrc == 0) /* inet_aton failed */
     {
         struct hostent he, *phe;
-        char *buff;
-        size_t bufflen = 0;
+        char *buf;
+        size_t buflen = 0;
 
-        phe = gethostname_re(psk->ch_ip_string, &he, &buff, &bufflen);
+        phe = gethostname_re(psk->ch_ip_string, &he, &buf, &buflen);
         if (phe == NULL)
         {
-            free(buff);
+            free(buf);
             sknet_util_log_msg ("sknet_net_open", "gethostbyname() failed", "");
             g_snprintf(psk->ch_error_msg, sizeof(psk->ch_error_msg), "gethostbyname() failed");
             psk->ioc = NULL;
@@ -2519,7 +2519,7 @@ static GIOChannel *sknet_net_open (PSKCOMM psk)
         }
         if (he.h_length != sizeof (struct in_addr) || he.h_addrtype != AF_INET)
         {
-            free(buff);
+            free(buf);
             sknet_util_log_msg ("sknet_net_open", "struct hostent", "argument error");
             g_snprintf(psk->ch_error_msg, sizeof(psk->ch_error_msg),"%s","argument error");
             psk->ioc = NULL;
@@ -2527,7 +2527,7 @@ static GIOChannel *sknet_net_open (PSKCOMM psk)
         }
 
         tcp_serv_addr->sin_addr.s_addr = *(unsigned int *) he.h_addr;
-        free(buff);
+        free(buf);
     } /* end if inet_addr */
     
   } /* end if b_network */ 
