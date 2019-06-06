@@ -159,7 +159,7 @@ static bool runthread = false;
 static HANDLE exitevt;
 DWORD WINAPI EventThread(LPVOID param)
 {
-   // Create global exit event and allow Adminstrator access to it so any
+   // Create global exit event and allow Administrator access to it so any
    // member of the Administrators group can signal it.
    exitevt = CreateEvent(NULL, TRUE, FALSE, APCTRAY_STOP_EVENT_NAME);
    TCHAR name[] = "Administrators";
