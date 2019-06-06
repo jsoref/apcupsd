@@ -2412,7 +2412,7 @@ Power Fail Test`_).
 
 When apcupsd detects a problem, it generates an EVENT, which
 consists of sending a message to the system log then invoking the
-``apccontrol`` script (normally in /etc/acpupsd/apccontrol) to handle
+``apccontrol`` script (normally in /etc/apcupsd/apccontrol) to handle
 the event.
 
 In order to create an event, remove the serial port plug from the
@@ -4691,7 +4691,7 @@ possible sources of the problem are:
    or the incorrect cable specification directive in the configuration
    file.
 
--  You may have a problem with the /etc/apcupsd/acpupsd.conf file.
+-  You may have a problem with the /etc/apcupsd/apcupsd.conf file.
    For example, check that you have specified the correct type of UPS
    and the correct networking directives. For more details, see the
    `After Installation`_ section.

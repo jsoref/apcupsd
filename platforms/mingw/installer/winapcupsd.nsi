@@ -489,7 +489,7 @@ Section "Uninstall"
   DetailPrint "Waiting for apcupsd and apctray to exit..."
   Sleep 3000
 
-  ; Remove apcuspd service, if needed
+  ; Remove apcupsd service, if needed
   ReadRegDWORD $R0 HKLM "Software\Apcupsd" "InstalledService"
   ${If} $R0 == 1
     ExecWait '"$INSTDIR\bin\apcupsd.exe" /quiet /remove'

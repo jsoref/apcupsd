@@ -4,7 +4,7 @@
  * A SmartUPS serial protocol simulator.
  *
  * This is a basic SmartUPS protocol simulator. It answers
- * queries from the host (i.e., apcuspd) and allows you to toggle
+ * queries from the host (i.e., apcupsd) and allows you to toggle
  * flags such as onbattery and adjust readouts such as timeleft.
  * This can be very useful for exercising apcupsd with a series
  * of events that would otherwise require draining your UPS battery

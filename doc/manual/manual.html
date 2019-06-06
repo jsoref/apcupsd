@@ -2735,7 +2735,7 @@ voltage-signaling UPS, please skip to the next section (<a class="reference inte
 Power Fail Test</a>).</p>
 <p>When apcupsd detects a problem, it generates an EVENT, which
 consists of sending a message to the system log then invoking the
-<tt class="docutils literal">apccontrol</tt> script (normally in /etc/acpupsd/apccontrol) to handle
+<tt class="docutils literal">apccontrol</tt> script (normally in /etc/apcupsd/apccontrol) to handle
 the event.</p>
 <p>In order to create an event, remove the serial port plug from the
 back of your computer or from the back of the UPS. Within 6
@@ -5111,7 +5111,7 @@ may have permissions problems accessing the serial port.</li>
 <li>You may have cabling problems, either with an incorrect cable,
 or the incorrect cable specification directive in the configuration
 file.</li>
-<li>You may have a problem with the /etc/apcupsd/acpupsd.conf file.
+<li>You may have a problem with the /etc/apcupsd/apcupsd.conf file.
 For example, check that you have specified the correct type of UPS
 and the correct networking directives. For more details, see the
 <a class="reference internal" href="#after-installation">After Installation</a> section.</li>
