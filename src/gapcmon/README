@@ -58,7 +58,7 @@ FEATURES:
 			  refresh interval in seconds of the server/workstation running 
 			  apcupsd with NIS configured.
 		- Graph Properties
-			* Alloww user to choose the color of each data series used in the
+			* Allow user to choose the color of each data series used in the
  			  History graph on monitor windows.
 		- Glossary
 			* Quick help text
