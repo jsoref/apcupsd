@@ -138,7 +138,7 @@ gapcmon (0.5.7-2) stable; urgency=normal
   user interface to request one; or a condition where one icon
   is present but dis-functional.  Fixed
 - stalled icons relate to a state where the user has selected
-  and repeated deseleted a particular monitor.  The icon for 
+  and repeated deselected a particular monitor.  The icon for 
   that monitor will default to OFFLINE and not change until
   the UPS actually changes state like to charging, or on battery.
   Fixed.    
