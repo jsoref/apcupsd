@@ -105,7 +105,7 @@ GOTO :done
    GOTO :done
 
 :commok
-   %POPUP% "Communciations with UPS restored."
+   %POPUP% "Communication with UPS restored."
    GOTO :done
 
 :powerout
