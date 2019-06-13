@@ -375,7 +375,7 @@ fi
 - set --with-serial-dev= to blank so will find any device and removed rh7 patch
 * Sat Jan 10 2004 D. Scott Barninger <barninger at fairfieldcomputers.com>
 - added build tags for rh8 rh9 fc1 and wb3
-- cleaned up dependancies and Requires by platform
+- cleaned up dependencies and Requires by platform
 * Thu Jan 1 2004 D. Scott Barninger <barninger at fairfieldcomputers.com>
 - removed rh_version from package names
 - added platform build configuration section to beginning of file
