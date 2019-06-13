@@ -274,7 +274,7 @@ enum {
 #define    FAILURE_TEST           'U'
 
 /*
- * Future additions for controlled discharing of batteries
+ * Future additions for controlled discharging of batteries
  * extend lifetimes.
  */
 
