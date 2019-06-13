@@ -136,7 +136,7 @@ bool ApcSmartUpsDriver::get_capabilities()
    }
 
    /*
-    * If UPS did not support APC_CMD_UPSMODEL (the default comand for 
+    * If UPS did not support APC_CMD_UPSMODEL (the default command for 
     * CI_UPSMODEL), maybe it supports APC_CMD_OLDFWREV which can be used to 
     * construct the model number.
     */
