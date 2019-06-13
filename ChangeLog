@@ -118,7 +118,7 @@ Add output current to status display
 ------------------------------------------------------------------------
 r2356 | adk0212 | 2015-09-20 11:01:17 -0400 (Sun, 20 Sep 2015) | 3 lines
 
-Add support for displaying output currnent on MODBUS
+Add support for displaying output current on MODBUS
 - Also rename {REAL,APPARENT}_POWER usages to clarify that they represent percent-of-nominal
 
 ------------------------------------------------------------------------
