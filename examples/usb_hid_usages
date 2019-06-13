@@ -1011,7 +1011,7 @@
 	0x45	Discharging
 	0x46	FullyCharged
 	0x47	FullyDischarged
-	0x48	ConditionningFlag
+	0x48	ConditioningFlag
 	0x49	AtRateOK
 	0x4A	SMBErrorCode
 	0x4B	NeedReplacement
