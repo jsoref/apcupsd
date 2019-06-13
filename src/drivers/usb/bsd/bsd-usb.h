@@ -79,7 +79,7 @@ private:
    int _fd;                         /* Our UPS control pipe fd when open */
    int _intfd;                      /* Interrupt pipe fd */
    char _orig_device[MAXSTRING];    /* Original port specification */
-   report_desc_t _rdesc;            /* Device's report descrptor */
+   report_desc_t _rdesc;            /* Device's report descriptor */
    USB_INFO *_info[CI_MAXCI + 1];   /* Info pointers for each command */
    bool _linkcheck;
 };

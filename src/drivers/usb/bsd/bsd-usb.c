@@ -95,7 +95,7 @@ bool BsdUsbUpsDriver::init_device(const char *devname)
       return false;
    }
 
-   /* Fetch the report descritor */
+   /* Fetch the report descriptor */
    rdesc = hidu_fetch_report_descriptor(fd, &rdesclen);
    if (!rdesc) {
       close(fd);

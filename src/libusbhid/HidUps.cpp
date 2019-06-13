@@ -175,7 +175,7 @@ bool HidUps::init_device(
       return false;
    }
 
-   /* Fetch the report descritor */
+   /* Fetch the report descriptor */
    rdesc = FetchReportDescr(&rdesclen);
    if (!rdesc) {
       Dmsg(100, "Unable to fetch report descriptor.\n");
