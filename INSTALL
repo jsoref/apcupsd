@@ -296,7 +296,7 @@ can recognize are:
 `doreboot'     Begins the `shutdown -r' sequence.
 `doshutdown'   Begins the `shutdown -h' sequence.
 `annoyme'      `wall' a message telling `Power problems, logoff now'.
-`emergency'    Begins an emercengy `shutdown' sequence.
+`emergency'    Begins an emergency `shutdown' sequence.
 `changeme'     `wall' a message telling `Battery failed, change them now'.
 `remotedown'   Begins the `shutdown' sequence, called from remote.
 
