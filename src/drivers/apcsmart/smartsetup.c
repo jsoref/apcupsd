@@ -136,7 +136,7 @@ bool ApcSmartUpsDriver::setup()
    /*
     * Don't use smart_poll here because it may loop waiting
     * on the serial port, and here we may be called before
-    * we are a deamon, so we want to error after a reasonable
+    * we are a daemon, so we want to error after a reasonable
     * time.
     */
    for (attempts = 0; attempts < 5; attempts++) {
