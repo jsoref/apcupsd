@@ -358,7 +358,7 @@ bool NetUpsDriver::get_ups_status_flag(int fill)
    /*
     * If we lost connection with master and we
     * are running on batteries, shutdown on the fourth
-    * consequtive pass here. While on batteries, this code
+    * consecutive pass here. While on batteries, this code
     * is called once per second.
     */
    if (stat == 0 && _ups->is_onbatt()) {
