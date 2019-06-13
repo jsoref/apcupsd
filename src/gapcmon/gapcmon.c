@@ -3560,7 +3560,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
    gint col_number = 0, i_port = 0, i_monitor = 0, i_len = 0;
    gfloat f_refresh = 0.0, f_graph = 0.0;
    gchar ch[GAPC_MAX_TEXT], *pch = NULL;
-   gboolean b_dupped = FALSE;
+   gboolean b_duped = FALSE;
 
    g_return_if_fail(pcolumn != NULL);
    g_return_if_fail(pch_new != NULL);
@@ -3591,7 +3591,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup(GAPC_HOST_DEFAULT);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_string(pcolumn->client, phost, pch, NULL);
          g_free(phost);
@@ -3608,7 +3608,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%d", i_port);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_int(pcolumn->client, pport, i_port, NULL);
          g_free(pport);
@@ -3625,7 +3625,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%d", i_port);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_int(pcolumn->client, pport, i_port, NULL);
          g_free(pport);
@@ -3642,7 +3642,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%3.1f", f_refresh);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_float(pcolumn->client, prefresh, f_refresh, NULL);
          g_free(prefresh);
@@ -3659,7 +3659,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%3.1f", f_graph);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_float(pcolumn->client, prefresh, f_graph, NULL);
          g_free(prefresh);
@@ -3671,7 +3671,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
       break;
    }
 
-   if ((pch != NULL) && !b_dupped) {
+   if ((pch != NULL) && !b_duped) {
       g_free(pch);
    }
 
@@ -4763,7 +4763,7 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
    gint i_value = 0, i_len = 0;
    gfloat f_value = 0.0;
    gchar *s_value = NULL, ch[GAPC_MAX_TEXT];
-   gboolean b_value = FALSE, b_flag_dupped = FALSE;
+   gboolean b_value = FALSE, b_flag_duped = FALSE;
 
    gboolean b_ls_valid = FALSE;
    gboolean b_v_valid = FALSE;
@@ -4945,7 +4945,7 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
          i_len = g_snprintf(ch, GAPC_MAX_TEXT, "%s", s_value);
          if (i_len < 2) {
             s_value = g_strdup(GAPC_HOST_DEFAULT);
-            b_flag_dupped = TRUE;
+            b_flag_duped = TRUE;
          }
          if (!g_str_equal(s_value, ov_s_host)) {
             gtk_list_store_set(GTK_LIST_STORE(pcfg->prefs_model), &iter,
@@ -4962,9 +4962,9 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
                 pm->psk->b_network_control = TRUE;
             }
          }
-         if (b_flag_dupped) {
+         if (b_flag_duped) {
             g_free(s_value);
-            b_flag_dupped = FALSE;
+            b_flag_duped = FALSE;
          }
          if (ov_s_host) {
             g_free(ov_s_host);
