@@ -47,7 +47,7 @@
 # define HIDDEV_FLAG_UREF  0x1
 #endif
 
-/* Enable this to force Linux 2.4 compatability mode */
+/* Enable this to force Linux 2.4 compatibility mode */
 #define FORCE_COMPAT24  false
 
 UpsDriver *UsbUpsDriver::Factory(UPSINFO *ups)

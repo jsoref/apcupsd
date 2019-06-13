@@ -227,7 +227,7 @@ bool SnmpEngine::Get(alist<OidVar> &oids)
       // Copy response data into caller's oidvars. Although I believe the SNMP
       // spec requires the GET-RESPONSE to give the var-bind-list in the same
       // order as the GET-REQUEST, we're not going to count on that. A little
-      // CPU time spent searching is ok to ensure widest compatiblity in case
+      // CPU time spent searching is ok to ensure widest compatibility in case
       // we encounter a weak SNMP agent implementation.
       VbListMessage &response = *rsp;
       for (unsigned int i = 0; i < response.Size(); i++)

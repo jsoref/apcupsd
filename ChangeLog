@@ -1982,7 +1982,7 @@ Remove vendor check from BSD and Generic USB drivers. HP OEMed some UPSes
 from APC so they are compatible with apcupsd in spite of carrying an HP
 vendor id. We might as well try to talk to anything a user connects. We
 will still fail if the required UPS application collection is not found
-and that is a better indicator of potential compatiblity.
+and that is a better indicator of potential compatibility.
 
 ------------------------------------------------------------------------
 r2010 | fleetworks | 2011-10-02 09:51:45 -0400 (Sun, 02 Oct 2011) | 2 lines
@@ -4842,7 +4842,7 @@ Bump version to 3.14.2.
 r1461 | adk0212 | 2007-09-10 19:09:49 -0400 (Mon, 10 Sep 2007) | 5 lines
 
 Prefer FEATURE reports over INPUT reports when searching for usages. This
-will fix compatiblity with BackUPS LCD models which have present but non-
+will fix compatibility with BackUPS LCD models which have present but non-
 functional INPUT reports. It may break compatibility with other models, so
 fingers are crossed.
 
