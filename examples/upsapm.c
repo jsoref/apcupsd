@@ -24,7 +24,7 @@
  *	    0 = high
  *	    1 = low
  *	    2 = crit
- *	    3 = charg
+ *	    3 = charge
  *   0x80 = battery_flags
  *    -1% = battery percentage
  *     -1 = battery time
