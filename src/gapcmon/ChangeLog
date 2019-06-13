@@ -191,7 +191,7 @@ gapcmon (0.5.3) stable; urgency=normal
  -- Tue Jan 31 2006 James Scott, Jr. <skoona@users.sourceforge.net>
 
 gapcmon (0.5.2) stable; urgency=normal
- ** reworked the config file to remove GKeyFile dependancy.  Switched
+ ** reworked the config file to remove GKeyFile dependency.  Switched
     to g_io_channel.. functions for configuration functions.
  
  -- Sun Jan 29 2006 James Scott, Jr. <skoona@users.sourceforge.net>
@@ -243,7 +243,7 @@ gapcmon (0.5.3) stable; urgency=normal
  -- Tue Jan 31 2006 James Scott, Jr. <skoona@users.sourceforge.net>
 
 gapcmon (0.5.2) stable; urgency=normal
- ** reworked the config file to remove GKeyFile dependancy.  Switched
+ ** reworked the config file to remove GKeyFile dependency.  Switched
     to g_io_channel.. functions for configuration functions.
  
  -- Sun Jan 29 2006 James Scott, Jr. <skoona@users.sourceforge.net>
