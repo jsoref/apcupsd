@@ -1168,7 +1168,7 @@ static gint lg_graph_draw_horizontal_text (PLGRAPH plg,
 }
 
 /*
- * Computes the size of 3 proportional charactor using default font
+ * Computes the size of 3 proportional character using default font
 */
 static void lg_graph_get_default_sizes (PLGRAPH plg, gint * width, gint * height)
 {

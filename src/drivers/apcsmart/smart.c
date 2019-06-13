@@ -132,7 +132,7 @@ void ApcSmartUpsDriver::writechar(char a)
 
 /********************************************************************* 
  *
- * Send a charcter to the UPS and get
+ * Send a character to the UPS and get
  * its response. Returns a pointer to the response string.
  *
  */
