@@ -1036,7 +1036,7 @@
 	0x86	SerialNumber
 	0x87	iManufacturerName
 	0x88	iDevicename
-	0x89	iDeviceChemistery
+	0x89	iDeviceChemistry
 	0x8A	iManufacturerData
 	0x8B	Rechargeable
 	0x8C	WarningCapacityLimit
