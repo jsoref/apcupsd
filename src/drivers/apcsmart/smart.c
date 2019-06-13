@@ -15,7 +15,7 @@
 /*
  * Parts of the information below was taken from apcd.c & apcd.h
  *
- * Definitons file for APC SmartUPS daemon
+ * Definitions file for APC SmartUPS daemon
  *
  *  Copyright (c) 1995 Pavel Korensky
  *  All rights reserved
