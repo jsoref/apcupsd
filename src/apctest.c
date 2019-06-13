@@ -2398,7 +2398,7 @@ static void parse_eeprom_cmds(char *eprom, char locale)
       }
 
       cmd[ncmd].cmd = c;           /* store command */
-      cmd[ncmd].size = s;          /* chare length of each value */
+      cmd[ncmd].size = s;          /* char length of each value */
       cmd[ncmd].num = n;           /* number of values */
 
       strncpy(cmd[ncmd].cmdvals, p, n * s);     /* save values */
