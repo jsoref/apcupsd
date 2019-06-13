@@ -5753,7 +5753,7 @@ static gint gapc_monitor_information_page(PGAPC_MONITOR pm, GtkWidget * notebook
 
    label = gtk_label_new("Selftest running\n" "Number of transfers\n"
       "Reason last transfer\n" "Last transfer to battery\n"
-      "Last transfer off battery\n" "Time on battery\n" "Cummulative on battery");
+      "Last transfer off battery\n" "Time on battery\n" "Cumulative on battery");
    gtk_label_set_use_markup(GTK_LABEL(label), TRUE);
    gtk_label_set_justify(GTK_LABEL(label), GTK_JUSTIFY_RIGHT);
    gtk_label_set_line_wrap(GTK_LABEL(label), TRUE);
