@@ -184,7 +184,7 @@ gapcmon (0.5.3) stable; urgency=normal
  ** Tweaked the label alignments in the Information page in 
     an attempt to reduce the visual jitter during and data refresh
  ** Reworked the refresh button logic to reuse the intial timer
-    routine.  this garauntees that every button press will be honored
+    routine.  this guarantees that every button press will be honored
     even though the network thread may be busy collecting data.  The
     refresh button now retries until successful.
  
@@ -236,7 +236,7 @@ gapcmon (0.5.3) stable; urgency=normal
  ** Tweaked the label alignments in the Information page in 
     an attempt to reduce the visual jitter during and data refresh
  ** Reworked the refresh button logic to reuse the intial timer
-    routine.  this garauntees that every button press will be honored
+    routine.  this guarantees that every button press will be honored
     even though the network thread may be busy collecting data.  The
     refresh button now retries until successful.
  
