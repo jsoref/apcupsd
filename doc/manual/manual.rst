@@ -5856,7 +5856,7 @@ apcupsd supports two commands, sent as the body of a message:
 
 #. "status" - The status command requests that the server send a copy of all 
    status values, in the form displayed by apcaccess. After the client sends the 
-   "status" command, the server will reply with a series of messges, each one 
+   "status" command, the server will reply with a series of messages, each one 
    containing one line of apcaccess status data. The end of the command series 
    is indicated by an empty message (length of 0).
 
