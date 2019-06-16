@@ -4899,7 +4899,7 @@ Redraw tray icons politely after an Explorer crash.
 r1452 | adk0212 | 2007-08-05 17:31:56 -0400 (Sun, 05 Aug 2007) | 5 lines
 
 Fix bug with multi-threaded net_open() calls. net_open() was using a global
-buffer for the destination address. Yikes! Bug manifestied itself in
+buffer for the destination address. Yikes! Bug manifested itself in
 apctray with multiple monitors occasionally (and timing-dependently)
 pointing to the wrong UPS.
 

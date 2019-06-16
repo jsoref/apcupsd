@@ -546,7 +546,7 @@ BUG FIXES
   * Don't leak unnecessary descriptors to child when execing apccontrol.
 
   * Fix bug with multi-threaded net_open() calls. net_open() was using
-    a global buffer for the destination address. Yikes! Bug manifestied
+    a global buffer for the destination address. Yikes! Bug manifested
     itself in apctray with multiple monitors occasionally (and
     timing-dependently) pointing to the wrong UPS.
 
