@@ -47,7 +47,7 @@ BOOL CALLBACK upsAbout::DialogProc(
    LPARAM lParam)
 {
    // We use the dialog-box's USERDATA to store a _this pointer
-   // This is set only once WM_INITDIALOG has been recieved, though!
+   // This is set only once WM_INITDIALOG has been received, though!
    upsAbout *_this = (upsAbout *)GetWindowLong(hwnd, GWL_USERDATA);
 
    switch (uMsg)
