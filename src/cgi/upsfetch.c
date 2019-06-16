@@ -103,7 +103,7 @@ static int fetch_data(const char *host)
    char lhost[200];
 
    if (statlen != 0 && (strcmp(last_host, host) == 0))
-       return 1;                      /* alread have data this host */
+       return 1;                      /* already have data this host */
    strncpy(last_host, host, sizeof(last_host)); 
    last_host[sizeof(last_host) - 1] = '\0';
    statlen = 0;

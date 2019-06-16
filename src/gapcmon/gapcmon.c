@@ -65,7 +65,7 @@
  *  key /schemas/apps/gapcmon/controller/keys
  *              /apps/gapcmon/monitor/x/monitor-keys
  *  Where x is the internal monitor number.
- *  max monitors=unlimted or sizeof guint
+ *  max monitors=unlimited or sizeof guint
  *  Where key is the actual keyname like enabled, host_name, port_name, or
  *  refresh_interval, etc.
  * ************************************************************************** *
@@ -365,7 +365,7 @@ static gboolean lg_graph_data_series_add_value (PLGRAPH plg, gint i_series_numbe
 
 /*
  * A shutdown routine
- * destroys all the data series and any assocaited dynamic data
+ * destroys all the data series and any associated dynamic data
 */
 static gboolean lg_graph_data_series_remove_all (PLGRAPH plg)
 {
@@ -1168,7 +1168,7 @@ static gint lg_graph_draw_horizontal_text (PLGRAPH plg,
 }
 
 /*
- * Computes the size of 3 proportional charactor using default font
+ * Computes the size of 3 proportional character using default font
 */
 static void lg_graph_get_default_sizes (PLGRAPH plg, gint * width, gint * height)
 {
@@ -2304,7 +2304,7 @@ static gint sknet_net_write_nbytes (GIOChannel * ioc, gchar * ptr, gsize nbytes)
  * Returns number of bytes sent
  * Returns -1 on error
  */
-static gint sknet_net_send (GIOChannel * ioc, gchar * buff, gsize len)
+static gint sknet_net_send (GIOChannel * ioc, gchar * buf, gsize len)
 {
   gint rc = 0;
   gshort pktsiz = 0;
@@ -2319,7 +2319,7 @@ static gint sknet_net_send (GIOChannel * ioc, gchar * buff, gsize len)
   }
 
   /* send data packet */
-  rc = sknet_net_write_nbytes (ioc, buff, len);
+  rc = sknet_net_write_nbytes (ioc, buf, len);
   if (rc != len)
   {
     sknet_util_log_msg ("sknet_net_send", "send message buffer", "failed");
@@ -2389,7 +2389,7 @@ static gint sknet_net_read_nbytes (GIOChannel * ioc, gchar * ptr, gsize nbytes)
  * Returns -1 on hard end of file (i.e. network connection close)
  * Returns -2 on error
  */
-static gint sknet_net_recv (GIOChannel * ioc, gchar * buff, gsize maxlen)
+static gint sknet_net_recv (GIOChannel * ioc, gchar * buf, gsize maxlen)
 {
   gint nbytes = 0;
   gshort pktsiz = 0;
@@ -2421,7 +2421,7 @@ static gint sknet_net_recv (GIOChannel * ioc, gchar * buff, gsize maxlen)
   }
 
   /* now read the actual data */
-  nbytes = sknet_net_read_nbytes (ioc, buff, pktsiz);
+  nbytes = sknet_net_read_nbytes (ioc, buf, pktsiz);
   if (nbytes <= 0)
   {
     sknet_util_log_msg ("sknet_net_recv", "read message", "failed");
@@ -2505,13 +2505,13 @@ static GIOChannel *sknet_net_open (PSKCOMM psk)
     if ( nrc == 0) /* inet_aton failed */
     {
         struct hostent he, *phe;
-        char *buff;
-        size_t bufflen = 0;
+        char *buf;
+        size_t buflen = 0;
 
-        phe = gethostname_re(psk->ch_ip_string, &he, &buff, &bufflen);
+        phe = gethostname_re(psk->ch_ip_string, &he, &buf, &buflen);
         if (phe == NULL)
         {
-            free(buff);
+            free(buf);
             sknet_util_log_msg ("sknet_net_open", "gethostbyname() failed", "");
             g_snprintf(psk->ch_error_msg, sizeof(psk->ch_error_msg), "gethostbyname() failed");
             psk->ioc = NULL;
@@ -2519,7 +2519,7 @@ static GIOChannel *sknet_net_open (PSKCOMM psk)
         }
         if (he.h_length != sizeof (struct in_addr) || he.h_addrtype != AF_INET)
         {
-            free(buff);
+            free(buf);
             sknet_util_log_msg ("sknet_net_open", "struct hostent", "argument error");
             g_snprintf(psk->ch_error_msg, sizeof(psk->ch_error_msg),"%s","argument error");
             psk->ioc = NULL;
@@ -2527,7 +2527,7 @@ static GIOChannel *sknet_net_open (PSKCOMM psk)
         }
 
         tcp_serv_addr->sin_addr.s_addr = *(unsigned int *) he.h_addr;
-        free(buff);
+        free(buf);
     } /* end if inet_addr */
     
   } /* end if b_network */ 
@@ -2638,7 +2638,7 @@ static void sknet_net_shutdown (PSKCOMM psk)
 /*
  * performs a complete NIS transaction by sending cmd and
  * loading each result line into the pch array.
- * also, refreshes status key/value pairs in hastable.
+ * also, refreshes status key/value pairs in hashtable.
  * return error = 0,  or number of lines read from network
  */
 static gint gapc_net_transaction_service(PGAPC_MONITOR pm, gchar * cp_cmd, gchar ** pch)
@@ -2826,7 +2826,7 @@ static gboolean gapc_util_treeview_get_iter_from_monitor(GtkTreeModel * model,
       gtk_tree_model_get(model, iter, GAPC_PREFS_MONITOR, &i_monitor, -1);
 
       if (i_monitor == i_value) {
-         /* set sucess flag */
+         /* set success flag */
          b_result = TRUE;
          break;
       }
@@ -2839,7 +2839,7 @@ static gboolean gapc_util_treeview_get_iter_from_monitor(GtkTreeModel * model,
 /*
  * Add a preferences record to the gconf instance and prefs_model
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_preferences_gconf_add_rec(PGAPC_CONFIG pcfg,
    gint i_monitor)
@@ -3560,7 +3560,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
    gint col_number = 0, i_port = 0, i_monitor = 0, i_len = 0;
    gfloat f_refresh = 0.0, f_graph = 0.0;
    gchar ch[GAPC_MAX_TEXT], *pch = NULL;
-   gboolean b_dupped = FALSE;
+   gboolean b_duped = FALSE;
 
    g_return_if_fail(pcolumn != NULL);
    g_return_if_fail(pch_new != NULL);
@@ -3591,7 +3591,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup(GAPC_HOST_DEFAULT);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_string(pcolumn->client, phost, pch, NULL);
          g_free(phost);
@@ -3608,7 +3608,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%d", i_port);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_int(pcolumn->client, pport, i_port, NULL);
          g_free(pport);
@@ -3625,7 +3625,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%d", i_port);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_int(pcolumn->client, pport, i_port, NULL);
          g_free(pport);
@@ -3642,7 +3642,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%3.1f", f_refresh);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_float(pcolumn->client, prefresh, f_refresh, NULL);
          g_free(prefresh);
@@ -3659,7 +3659,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
             pch = g_strdup_printf("%3.1f", f_graph);
          } else {
             pch = pch_new;
-            b_dupped = TRUE;
+            b_duped = TRUE;
          }
          gconf_client_set_float(pcolumn->client, prefresh, f_graph, NULL);
          g_free(prefresh);
@@ -3671,7 +3671,7 @@ static void cb_panel_prefs_handle_cell_edited(GtkCellRendererText * cell,
       break;
    }
 
-   if ((pch != NULL) && !b_dupped) {
+   if ((pch != NULL) && !b_duped) {
       g_free(pch);
    }
 
@@ -3732,7 +3732,7 @@ static PGAPC_PREFS_COLUMN gapc_panel_prefs_col_data_init(PGAPC_CONFIG pcfg,
  * Gets the gconf instance preferences for all monitors
  * and loads the prefs_model.
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_preferences_data_model_load(PGAPC_CONFIG pcfg)
 {
@@ -4763,7 +4763,7 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
    gint i_value = 0, i_len = 0;
    gfloat f_value = 0.0;
    gchar *s_value = NULL, ch[GAPC_MAX_TEXT];
-   gboolean b_value = FALSE, b_flag_dupped = FALSE;
+   gboolean b_value = FALSE, b_flag_duped = FALSE;
 
    gboolean b_ls_valid = FALSE;
    gboolean b_v_valid = FALSE;
@@ -4945,7 +4945,7 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
          i_len = g_snprintf(ch, GAPC_MAX_TEXT, "%s", s_value);
          if (i_len < 2) {
             s_value = g_strdup(GAPC_HOST_DEFAULT);
-            b_flag_dupped = TRUE;
+            b_flag_duped = TRUE;
          }
          if (!g_str_equal(s_value, ov_s_host)) {
             gtk_list_store_set(GTK_LIST_STORE(pcfg->prefs_model), &iter,
@@ -4962,9 +4962,9 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
                 pm->psk->b_network_control = TRUE;
             }
          }
-         if (b_flag_dupped) {
+         if (b_flag_duped) {
             g_free(s_value);
-            b_flag_dupped = FALSE;
+            b_flag_duped = FALSE;
          }
          if (ov_s_host) {
             g_free(ov_s_host);
@@ -4988,7 +4988,7 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
 /*
  * Clears the gconf directory watchers for the control panel
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_gconf_destroy(PGAPC_CONFIG pcfg)
 {
@@ -5015,7 +5015,7 @@ static gboolean gapc_panel_gconf_destroy(PGAPC_CONFIG pcfg)
 /*
  * Set the gconf directory watchers for the control panel
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_gconf_watch(PGAPC_CONFIG pcfg)
 {
@@ -5057,7 +5057,7 @@ static gboolean gapc_panel_gconf_watch(PGAPC_CONFIG pcfg)
  * Gets the gconf instance preferences for this program
  * and init the control panel values.
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_gconf_init(PGAPC_CONFIG pcfg)
 {
@@ -5623,7 +5623,7 @@ static PLGRAPH lg_graph_create (GtkWidget * box, gint width, gint height)
      * These must be set before the first drawing_area configure event 
      */
     lg_graph_set_chart_title  (plg, "Waiting for Update");
-    lg_graph_set_y_label_text (plg, "Precentage of 100% normal");
+    lg_graph_set_y_label_text (plg, "Percentage of 100% normal");
     lg_graph_set_x_label_text (plg, "Waiting for Update");
 
     g_snprintf (plg->ch_tooltip_text, sizeof (plg->ch_tooltip_text), "%s",
@@ -5753,7 +5753,7 @@ static gint gapc_monitor_information_page(PGAPC_MONITOR pm, GtkWidget * notebook
 
    label = gtk_label_new("Selftest running\n" "Number of transfers\n"
       "Reason last transfer\n" "Last transfer to battery\n"
-      "Last transfer off battery\n" "Time on battery\n" "Cummulative on battery");
+      "Last transfer off battery\n" "Time on battery\n" "Cumulative on battery");
    gtk_label_set_use_markup(GTK_LABEL(label), TRUE);
    gtk_label_set_justify(GTK_LABEL(label), GTK_JUSTIFY_RIGHT);
    gtk_label_set_line_wrap(GTK_LABEL(label), TRUE);

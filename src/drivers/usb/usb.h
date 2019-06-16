@@ -36,7 +36,7 @@ public:
 
    static UpsDriver *Factory(UPSINFO *ups);
 
-   // UpsDriver functions impemented in UsbUpsDriver base class
+   // UpsDriver functions implemented in UsbUpsDriver base class
    virtual bool get_capabilities();
    virtual bool read_volatile_data();
    virtual bool read_static_data();

@@ -1828,7 +1828,7 @@ script (/etc/rc.d/init.d/halt in the case of Red Hat Linux) and see
 if the final line that performs the halt or reboot contains the 
 ``-p`` option for powering down the computer. It should not with the
 logic used by apcupsd, but if it does, the ``-p`` option could cause
-your computer to power off while the UPS is still suppling power
+your computer to power off while the UPS is still supplying power
 (i.e. before the UPS kills the power). Depending on the setting of
 your BIOS, it may prevent your computer from restarting when the
 power returns. As already mentioned, this should not apply, but in
@@ -2379,7 +2379,7 @@ following variables:
     This is the status of the UPS and it should
     normally be ``ONLINE``.
 
-A very disturbing tendance is for some of the newer (Mar 2004) RS
+A very disturbing tendency is for some of the newer (Mar 2004) RS
 and ES UPSes to have no Voltage information. This is an annoying bug, 
 but not serious. On the other hand, some of those UPSes now have no
 battery charge information ``BCHARGE``. If ``BCHARGE`` is zero in your
@@ -2412,7 +2412,7 @@ Power Fail Test`_).
 
 When apcupsd detects a problem, it generates an EVENT, which
 consists of sending a message to the system log then invoking the
-``apccontrol`` script (normally in /etc/acpupsd/apccontrol) to handle
+``apccontrol`` script (normally in /etc/apcupsd/apccontrol) to handle
 the event.
 
 In order to create an event, remove the serial port plug from the
@@ -2475,7 +2475,7 @@ remaining runtime on the batteries. This can be done by examining
 the values of the ``BATTCHG`` and ``TIMELEFT`` variables in the
 printout of '``apcaccess status``'.
 
-Athough this should not be necessary, as an extra precaution, you
+Although this should not be necessary, as an extra precaution, you
 can shutdown your machine, remove the plug from the UPS you are
 testing, and plug your machine into another UPS or directly into
 the wall. Doing so, will ensure that the UPS doesn't cut the power
@@ -3025,7 +3025,7 @@ from the source cgi directory as follows:
 
 As with multimon, quite a few lines of html should then be displayed.
 
-upsfstatus.cgi
+upsfstats.cgi
 ~~~~~~~~~~~~~~
 
 If you
@@ -3109,7 +3109,7 @@ Many thanks go to Russell Kroll rkroll@exploits.org who wrote
 the CGI programs to work with his UPS Monitoring system named
 Network UPS Tools (NUT). Thanks also to Jonathan Benson 
 jbenson@technologist.com for initially
-adapting the upsstatus.cgi program to work with apcupsd.
+adapting the upsstats.cgi program to work with apcupsd.
 
 We have enhanced the bar graph program and hope that our changes
 can be useful to the original author in his project.
@@ -3988,7 +3988,7 @@ completely or left empty to accept the default.
 - *community*: The read-write community string, usually "private". You can
   specify a read-only community string, usually "public", if you do not
   require killpower support. If the community string is omitted, apcupsd will
-  attempt to autotedect by trying "private" and "public".
+  attempt to autodetect by trying "private" and "public".
   (optional, default: autodetect).
 
 A NIS Server/Client (Master/Slave) configuration 
@@ -4691,7 +4691,7 @@ possible sources of the problem are:
    or the incorrect cable specification directive in the configuration
    file.
 
--  You may have a problem with the /etc/apcupsd/acpupsd.conf file.
+-  You may have a problem with the /etc/apcupsd/apcupsd.conf file.
    For example, check that you have specified the correct type of UPS
    and the correct networking directives. For more details, see the
    `After Installation`_ section.
@@ -5856,7 +5856,7 @@ apcupsd supports two commands, sent as the body of a message:
 
 #. "status" - The status command requests that the server send a copy of all 
    status values, in the form displayed by apcaccess. After the client sends the 
-   "status" command, the server will reply with a series of messges, each one 
+   "status" command, the server will reply with a series of messages, each one 
    containing one line of apcaccess status data. The end of the command series 
    is indicated by an empty message (length of 0).
 

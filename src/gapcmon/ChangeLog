@@ -68,7 +68,7 @@ gapcmon (0.8.2-0) stable; urgency=normal
   to append the timestamp rather than prepend it.  This corrected the
   presentation of the timestamp to the user in reverse order.
 - Constrained the tooltip to present only for actual data points.  It
-  was presenting for non-existant data points resulting in time_zero
+  was presenting for nonexistent data points resulting in time_zero
   display's ( dec 31, 1970...)
 
 gapcmon (0.8.1-0) stable; urgency=normal
@@ -78,8 +78,8 @@ gapcmon (0.8.1-0) stable; urgency=normal
 
 gapcmon (0.7.0-0) stable; urgency=normal
 * Thru Apr 18 2006 James Scott, Jr. <skoona@users.sourceforge.net>
-- Rewrite to include desktop independant features completed.
-- This module replace all other interations of gapcmon: including
+- Rewrite to include desktop independent features completed.
+- This module replace all other iterations of gapcmon: including
   gapc, gpanel, gpanel_apcmon, etc.
 
 gapcmon (0.6.2-0) stable; urgency=normal
@@ -89,7 +89,7 @@ gapcmon (0.6.2-0) stable; urgency=normal
 - Added a paned window to help user manage size of icons and notebooks
 - Attempted to implement true alphabetic sort of icons labels, by adding
   label text to main.window icons ( not working the why I would like )
-- Reviewed gdk_threads_enter() useage and removed duplicates from
+- Reviewed gdk_threads_enter() usage and removed duplicates from
   gtkglgraph.c in response to a user bug ( no x|y-labels on chart-N+1)  
 - Several routine consolidated or parameter-ized.
 
@@ -100,7 +100,7 @@ gapcmon (0.6.1-0) stable; urgency=normal
 - Updated the gapc_monitor_update() in gapcmon_core.c to handle
   the 0-100 percent scale for charted data points.  LINEV uses
   HITRANS as scale and defaults to 120:230, BATTV uses 12:24 unless 
-  NOMBATTV is present, and LOADPCT, TIMELEFT, are inversly related to
+  NOMBATTV is present, and LOADPCT, TIMELEFT, are inversely related to
   each other.  BCHARGE values are taken as is.
 - Updated the gapc_util_point_filter_set() in gapcmon_core.c to handle
   out of range graphing data points by defaulting them to 108 percent
@@ -130,7 +130,7 @@ gapcmon (0.5.7-3) stable; urgency=normal
 
 gapcmon (0.5.7-2) stable; urgency=normal
 * Thu Mar 16 2006 James Scott, Jr. <skoona@users.sourceforge.net>
-- Modified gpanel_apcmon.c to handle an unexpected intial state issue
+- Modified gpanel_apcmon.c to handle an unexpected initial state issue
   and some stalled Icon updates issue.
 - none-enabled relates to the very first execution without
   gconf2 schemas installed to supply defaults.  This resulted in
@@ -138,7 +138,7 @@ gapcmon (0.5.7-2) stable; urgency=normal
   user interface to request one; or a condition where one icon
   is present but dis-functional.  Fixed
 - stalled icons relate to a state where the user has selected
-  and repeated deseleted a particular monitor.  The icon for 
+  and repeated deselected a particular monitor.  The icon for 
   that monitor will default to OFFLINE and not change until
   the UPS actually changes state like to charging, or on battery.
   Fixed.    
@@ -183,15 +183,15 @@ gapcmon (0.5.3) stable; urgency=normal
     to specify the number of seconds between data refreshes.
  ** Tweaked the label alignments in the Information page in 
     an attempt to reduce the visual jitter during and data refresh
- ** Reworked the refresh button logic to reuse the intial timer
-    routine.  this garauntees that every button press will be honored
+ ** Reworked the refresh button logic to reuse the initial timer
+    routine.  this guarantees that every button press will be honored
     even though the network thread may be busy collecting data.  The
     refresh button now retries until successful.
  
  -- Tue Jan 31 2006 James Scott, Jr. <skoona@users.sourceforge.net>
 
 gapcmon (0.5.2) stable; urgency=normal
- ** reworked the config file to remove GKeyFile dependancy.  Switched
+ ** reworked the config file to remove GKeyFile dependency.  Switched
     to g_io_channel.. functions for configuration functions.
  
  -- Sun Jan 29 2006 James Scott, Jr. <skoona@users.sourceforge.net>
@@ -235,15 +235,15 @@ gapcmon (0.5.3) stable; urgency=normal
     to specify the number of seconds between data refreshes.
  ** Tweaked the label alignments in the Information page in 
     an attempt to reduce the visual jitter during and data refresh
- ** Reworked the refresh button logic to reuse the intial timer
-    routine.  this garauntees that every button press will be honored
+ ** Reworked the refresh button logic to reuse the initial timer
+    routine.  this guarantees that every button press will be honored
     even though the network thread may be busy collecting data.  The
     refresh button now retries until successful.
  
  -- Tue Jan 31 2006 James Scott, Jr. <skoona@users.sourceforge.net>
 
 gapcmon (0.5.2) stable; urgency=normal
- ** reworked the config file to remove GKeyFile dependancy.  Switched
+ ** reworked the config file to remove GKeyFile dependency.  Switched
     to g_io_channel.. functions for configuration functions.
  
  -- Sun Jan 29 2006 James Scott, Jr. <skoona@users.sourceforge.net>

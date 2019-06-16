@@ -59,7 +59,7 @@ case "$1" in
       printf "Communications with UPS lost." | wall -a
    ;;
    commok)
-      printf "Communciations with UPS restored." | wall -a
+      printf "Communication with UPS restored." | wall -a
    ;;
    powerout)
    ;;

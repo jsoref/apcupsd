@@ -126,7 +126,7 @@ enum {
    CI_DSHUTD,                      /* Shutdown delay */
    CI_LTRANS,                      /* Low transfer voltage */
    CI_HTRANS,                      /* High transfer voltage */
-   CI_RETPCT,                      /* Return percent threshhold */
+   CI_RETPCT,                      /* Return percent threshold */
    CI_DALARM,                      /* Alarm delay */
    CI_DLBATT,                      /* low battery warning, mins */
    CI_IDEN,                        /* UPS Identification (name) */
@@ -274,7 +274,7 @@ enum {
 #define    FAILURE_TEST           'U'
 
 /*
- * Future additions for contolled discharing of batteries
+ * Future additions for controlled discharging of batteries
  * extend lifetimes.
  */
 
@@ -299,7 +299,7 @@ enum {
 #define LCKNOLOCK               3  /* lock file not needed: APC_NET */
 
 /* Generic defines for boolean return values. */
-#define SUCCESS                 0  /* Function successfull */
+#define SUCCESS                 0  /* Function successful */
 #define FAILURE                 1  /* Function failure */
 
 /* These seem unavoidable :-( */

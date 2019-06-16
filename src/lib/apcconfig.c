@@ -145,7 +145,7 @@ static const PAIRS table[] = {
    {"MINUTES",        match_int,   WHERE(runtime),     0},
    {"KILLDELAY",      match_int,   WHERE(killdelay),   0},
 
-   /* Configuration parmeters for network information server */
+   /* Configuration parameters for network information server */
    {"NETSERVER", match_index, WHERE(netstats),   onoroff},
    {"NISIP",     match_str,   WHERE(nisip),      SIZE(nisip)},
    {"NISPORT",   match_int,   WHERE(statusport), 0},
@@ -636,7 +636,7 @@ void check_for_config(UPSINFO *ups, char *cfgfile)
       }
 
       /*
-       * Here we have read alredy the first line of configuration
+       * Here we have read already the first line of configuration
        * so there may be the case where the first line is a config
        * parameter and we must not discard it reading another line.
        * Jump into the reading configuration loop.

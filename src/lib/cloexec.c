@@ -33,7 +33,7 @@ sock_t socket_cloexec(int domain, int type, int protocol)
    if (s == INVALID_SOCKET && errno == EINVAL)
    {
 #endif
-      // No SOCK_CLOEXEC, emulatre via fcntl
+      // No SOCK_CLOEXEC, emulate via fcntl
       s = socket(domain, type, protocol);
 #ifdef FD_CLOEXEC
       if (s != INVALID_SOCKET)

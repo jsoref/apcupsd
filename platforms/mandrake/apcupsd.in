@@ -18,7 +18,7 @@
 
 APCPID=@PIDDIR@/apcupsd.pid
 
-# Source function libarary
+# Source function library
 . /etc/rc.d/init.d/functions
 
 if [ ! -x @sbindir@/apcupsd -o ! -r @sysconfdir@/apcupsd.conf ]; then

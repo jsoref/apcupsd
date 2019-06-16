@@ -1421,7 +1421,7 @@ Configuration on `date`:
 
 cat config.out
 
-echo Configuration complete: Run \'$MAKE\' to build apcuspd.
+echo Configuration complete: Run \'$MAKE\' to build apcupsd.
 echo
 
 echo $PATH | grep /usr/ucb >/dev/null

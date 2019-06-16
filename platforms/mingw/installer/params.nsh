@@ -27,7 +27,7 @@ Function GetONEParameter
      IntOp $R2 $R2 + 1
      StrCpy $R0 $CMDLINE 1 $R2
      StrCmp $R0 " " loop3
-     StrCpy $R3 $R2   ; found the begining of the current parameter
+     StrCpy $R3 $R2   ; found the beginning of the current parameter
 
 
    loop:          ; scanning for the end of the current parameter

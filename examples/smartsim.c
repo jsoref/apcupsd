@@ -4,7 +4,7 @@
  * A SmartUPS serial protocol simulator.
  *
  * This is a basic SmartUPS protocol simulator. It answers
- * queries from the host (i.e., apcuspd) and allows you to toggle
+ * queries from the host (i.e., apcupsd) and allows you to toggle
  * flags such as onbattery and adjust readouts such as timeleft.
  * This can be very useful for exercising apcupsd with a series
  * of events that would otherwise require draining your UPS battery
@@ -36,7 +36,7 @@
  *    8/5 LoadPct (inc/dec)   (use numeric keypad)
  *    9/6 TimeLeft (inc/dec)  (use numeric keypad)
  *
- * Some keypress commands produce procotol events. For example,
+ * Some keypress commands produce protocol events. For example,
  * toggling on/off battery changes the status variable and also
  * issues '!' and '$' "interrupt" events.
  */

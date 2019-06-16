@@ -23,7 +23,7 @@
 /*
  * NAME 
  *
- * strstr -- locate first occurence of a substring 
+ * strstr -- locate first occurrence of a substring 
  *
  * SYNOPSIS 
  *
@@ -31,7 +31,7 @@
  *
  * DESCRIPTION 
  *
- * Locates the first occurence in the string pointed to by S1 of the string
+ * Locates the first occurrence in the string pointed to by S1 of the string
  * pointed to by S2.  Returns a pointer to the substring found, or a NULL
  * pointer if not found.  If S2 points to a string with zero length, the
  * function returns S1. 

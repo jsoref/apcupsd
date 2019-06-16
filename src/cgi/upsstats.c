@@ -24,7 +24,7 @@
  *        Nov 1999 to work with apcupsd networking and
  *                 to include as much of the NUT code
  *                   as possible.
- *                 added runtim status
+ *                 added runtime status
  */
 
 #include <stdio.h>

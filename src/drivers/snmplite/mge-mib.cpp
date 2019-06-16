@@ -199,7 +199,7 @@ static void mge_update_ci(UPSINFO *ups, int ci, Snmp::Variable &data)
       break;
 
    case CI_LOAD:
-      // caclulate the arithmetic average of all sequence values
+      // calculate the arithmetic average of all sequence values
       if (data.seq.begin() != data.seq.end()) {
          ups->UPSLoad = 0;
          for (alist<Snmp::Variable>::iterator iter = data.seq.begin();

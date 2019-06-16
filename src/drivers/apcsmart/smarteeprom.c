@@ -398,7 +398,7 @@ int ApcSmartUpsDriver::change_ups_eeprom_item(const char *title, const char cmd,
 
       /*
        * Check if we cycled back to the same value, but permit
-       * a duplicate because the L for sensitivy appears
+       * a duplicate because the L for sensitivity appears
        * twice in a row, i.e. H M L L.
        */
       if (strcmp(oldvalue, response) == 0 && i > 0)
@@ -420,7 +420,7 @@ int ApcSmartUpsDriver::change_ups_eeprom_item(const char *title, const char cmd,
 
 
 /*
- * Set new values in EEPROM memmory.  Change the UPS EEPROM.
+ * Set new values in EEPROM memory.  Change the UPS EEPROM.
  */
 void ApcSmartUpsDriver::change_extended()
 {
@@ -432,7 +432,7 @@ void ApcSmartUpsDriver::change_extended()
     * Note, a value of -1 in the variable at the beginning
     * means that the user did not put a configuration directive
     * in /etc/apcupsd/apcupsd.conf. Consequently, if no value
-    * was given, we won't attept to change it.
+    * was given, we won't attempt to change it.
     */
 
    /* SENSITIVITY */

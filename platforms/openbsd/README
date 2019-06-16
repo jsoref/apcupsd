@@ -59,7 +59,7 @@ modified to the following:
 
 As a consequence of the above, another difference is that once the
 shutdown sequence has been initiated, it cannot be cancelled even if
-mains power returns.  This has implications for a hetrogeneous environment:
+mains power returns.  This has implications for a heterogeneous environment:
 If the OpenBSD server is running in apcupsd networked mode with another
 machine such as a Linux server, it is possible for the former to complete
 the shutdown and the latter to cancel it.  Depending on which machine

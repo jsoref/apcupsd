@@ -333,7 +333,7 @@ int upsService::RemoveService(bool quiet)
          if (!quiet) {
             MessageBox(NULL, 
                        _("Could not find registry entry.\n"
-                         "Service probably not registerd - "
+                         "Service probably not registered - "
                          "the Apcupsd service was not removed"),
                        SERVICE_NAME, MB_ICONEXCLAMATION | MB_OK);
          }

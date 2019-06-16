@@ -216,7 +216,7 @@ typedef struct _LGRAPH_SERIES {
     gdouble     d_max_value;
     gdouble     d_min_value;
     gdouble    *lg_point_dvalue;    /* array of doubles y values zero based, x = index */
-    GdkPoint   *point_pos;      /* last gdk position each point - recalc on evey draw */
+    GdkPoint   *point_pos;      /* last gdk position each point - recalc on every draw */
 } LG_SERIES, *PLG_SERIES;
 
 typedef struct _LGRAPH_RANGES {
@@ -370,7 +370,7 @@ typedef struct _System_Control_Data {
    GtkTreeView *prefs_treeview;
    GtkTreeSelection *prefs_select;
    guint prefs_last_monitor;       /* assigning monitor numbers */
-   gint cb_last_monitor_deleted;   /* overide gconf inconsistency on kde */
+   gint cb_last_monitor_deleted;   /* override gconf inconsistency on kde */
 
    GtkTreeModel *monitor_model;    /* GtkListStore */
    GtkTreeView *monitor_treeview;

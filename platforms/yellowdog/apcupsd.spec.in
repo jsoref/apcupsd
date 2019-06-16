@@ -54,7 +54,7 @@ BuildRequires: glibc-devel >= 2.3
 Apcupsd can be used for controlling most APC UPSes. During a
 power failure, apcupsd will inform the users about the power
 failure and that a shutdown may occur.  If power is not restored,
-a system shutdown will follow when the battery is exausted, a
+a system shutdown will follow when the battery is exhausted, a
 timeout (seconds) expires, or the battery runtime expires based
 on internal APC calculations determined by power consumption
 rates.  If the power is restored before one of the above shutdown
@@ -93,7 +93,7 @@ Group:        System Environment/Daemons
 Apcupsd can be used for controlling most APC UPSes. During a
 power failure, apcupsd will inform the users about the power
 failure and that a shutdown may occur.  If power is not restored,
-a system shutdown will follow when the battery is exausted, a
+a system shutdown will follow when the battery is exhausted, a
 timeout (seconds) expires, or the battery runtime expires based
 on internal APC calculations determined by power consumption
 rates.  If the power is restored before one of the above shutdown
@@ -375,7 +375,7 @@ fi
 - set --with-serial-dev= to blank so will find any device and removed rh7 patch
 * Sat Jan 10 2004 D. Scott Barninger <barninger at fairfieldcomputers.com>
 - added build tags for rh8 rh9 fc1 and wb3
-- cleaned up dependancies and Requires by platform
+- cleaned up dependencies and Requires by platform
 * Thu Jan 1 2004 D. Scott Barninger <barninger at fairfieldcomputers.com>
 - removed rh_version from package names
 - added platform build configuration section to beginning of file
@@ -393,7 +393,7 @@ fi
 - combined layout for usb/serial builds
 * Thu Jan 16 2003 Scott at fairfieldcomputers dot com
 - Update spec to new source layout
-- Added masterconnect and mastertimout to files section
+- Added masterconnect and mastertimeout to files section
 - Changed make install-apcupsd and make install-cgi to make install
 * Wed Sep 05 2001 kern at sibbald dot com
 - Applied very nice patch to this spec by Giulio Orsero <giulioo@pobox.com>

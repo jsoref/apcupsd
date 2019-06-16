@@ -157,7 +157,7 @@ NEW FEATURES
 
 BUG FIXES
 
-  * Fix missing status and spurrious incorrect status on newer BackUPS CS
+  * Fix missing status and spurious incorrect status on newer BackUPS CS
     models using USB interface.
 
   * USB compatibility fixes for Mac OS X Lion
@@ -389,7 +389,7 @@ MAJOR CHANGES
     
     NEW BUILD SYSTEM NOTES
       - GNU make is required. The configure script checks for this and tells
-        you how to invokve it (on some platforms it is 'gmake' instead of 
+        you how to invoke it (on some platforms it is 'gmake' instead of 
         'make').
       - Output during build is pretty-printed by default. To see more details,
         use 'make VERBOSE=1' for output similar to the old build system. For
@@ -546,7 +546,7 @@ BUG FIXES
   * Don't leak unnecessary descriptors to child when execing apccontrol.
 
   * Fix bug with multi-threaded net_open() calls. net_open() was using
-    a global buffer for the destination address. Yikes! Bug manifestied
+    a global buffer for the destination address. Yikes! Bug manifested
     itself in apctray with multiple monitors occasionally (and
     timing-dependently) pointing to the wrong UPS.
 

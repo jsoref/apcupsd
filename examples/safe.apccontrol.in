@@ -28,7 +28,7 @@ EOF
         ;;
         commok)
                 wall <<EOF
-apccontrol: Communciations with UPS restored.
+apccontrol: Communication with UPS restored.
 
 EOF
         ;;

@@ -1,5 +1,5 @@
 //                              -*- Mode: C++ -*-
-// compat.cpp -- compatibilty layer to make bacula-fd run
+// compat.cpp -- compatibility layer to make bacula-fd run
 //               natively under windows
 //
 // Copyright transferred from Raider Solutions, Inc to

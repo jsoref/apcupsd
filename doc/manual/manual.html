@@ -448,7 +448,7 @@ at <a class="reference external" href="http://www.apcupsd.com">http://www.apcups
 <li><a class="reference internal" href="#using-the-cgi-programs-on-windows" id="id128">Using the CGI Programs on Windows</a></li>
 <li><a class="reference internal" href="#multimon-cgi" id="id129">multimon.cgi</a></li>
 <li><a class="reference internal" href="#upsstats-cgi" id="id130">upsstats.cgi</a></li>
-<li><a class="reference internal" href="#upsfstatus-cgi" id="id131">upsfstatus.cgi</a></li>
+<li><a class="reference internal" href="#upsfstats-cgi" id="id131">upsfstats.cgi</a></li>
 <li><a class="reference internal" href="#a-tip-from-carl-erhorn-for-sun-systems" id="id132">A Tip from Carl Erhorn for Sun Systems:</a></li>
 <li><a class="reference internal" href="#cgi-credits" id="id133">CGI Credits</a></li>
 </ul>
@@ -2249,7 +2249,7 @@ script (/etc/rc.d/init.d/halt in the case of Red Hat Linux) and see
 if the final line that performs the halt or reboot contains the
 <tt class="docutils literal"><span class="pre">-p</span></tt> option for powering down the computer. It should not with the
 logic used by apcupsd, but if it does, the <tt class="docutils literal"><span class="pre">-p</span></tt> option could cause
-your computer to power off while the UPS is still suppling power
+your computer to power off while the UPS is still supplying power
 (i.e. before the UPS kills the power). Depending on the setting of
 your BIOS, it may prevent your computer from restarting when the
 power returns. As already mentioned, this should not apply, but in
@@ -2708,7 +2708,7 @@ should be near 24 Volts plus or minus 5 Volts.</dd>
 <dd>This is the status of the UPS and it should
 normally be <tt class="docutils literal">ONLINE</tt>.</dd>
 </dl>
-<p>A very disturbing tendance is for some of the newer (Mar 2004) RS
+<p>A very disturbing tendency is for some of the newer (Mar 2004) RS
 and ES UPSes to have no Voltage information. This is an annoying bug,
 but not serious. On the other hand, some of those UPSes now have no
 battery charge information <tt class="docutils literal">BCHARGE</tt>. If <tt class="docutils literal">BCHARGE</tt> is zero in your
@@ -2735,7 +2735,7 @@ voltage-signaling UPS, please skip to the next section (<a class="reference inte
 Power Fail Test</a>).</p>
 <p>When apcupsd detects a problem, it generates an EVENT, which
 consists of sending a message to the system log then invoking the
-<tt class="docutils literal">apccontrol</tt> script (normally in /etc/acpupsd/apccontrol) to handle
+<tt class="docutils literal">apccontrol</tt> script (normally in /etc/apcupsd/apccontrol) to handle
 the event.</p>
 <p>In order to create an event, remove the serial port plug from the
 back of your computer or from the back of the UPS. Within 6
@@ -2785,7 +2785,7 @@ battery is fully charged and that you have at least 5 minutes of
 remaining runtime on the batteries. This can be done by examining
 the values of the <tt class="docutils literal">BATTCHG</tt> and <tt class="docutils literal">TIMELEFT</tt> variables in the
 printout of '<tt class="docutils literal">apcaccess status</tt>'.</p>
-<p>Athough this should not be necessary, as an extra precaution, you
+<p>Although this should not be necessary, as an extra precaution, you
 can shutdown your machine, remove the plug from the UPS you are
 testing, and plug your machine into another UPS or directly into
 the wall. Doing so, will ensure that the UPS doesn't cut the power
@@ -3242,8 +3242,8 @@ from the source cgi directory as follows:</p>
 </pre>
 <p>As with multimon, quite a few lines of html should then be displayed.</p>
 </div>
-<div class="section" id="upsfstatus-cgi">
-<h4><a class="toc-backref" href="#id131">upsfstatus.cgi</a></h4>
+<div class="section" id="upsfstats-cgi">
+<h4><a class="toc-backref" href="#id131">upsfstats.cgi</a></h4>
 <p>If you
 would like to see all of the STATUS variables available over the
 network, click on the <tt class="docutils literal">Data</tt> field of the desired system, and your
@@ -3318,7 +3318,7 @@ the web server, and access the cgi using something like:</p>
 the CGI programs to work with his UPS Monitoring system named
 Network UPS Tools (NUT). Thanks also to Jonathan Benson
 <a class="reference external" href="mailto:jbenson&#64;technologist.com">jbenson&#64;technologist.com</a> for initially
-adapting the upsstatus.cgi program to work with apcupsd.</p>
+adapting the upsstats.cgi program to work with apcupsd.</p>
 <p>We have enhanced the bar graph program and hope that our changes
 can be useful to the original author in his project.</p>
 </div>
@@ -4501,7 +4501,7 @@ autodetect). Allowable choices for vendor are:</p>
 <li><p class="first"><em>community</em>: The read-write community string, usually &quot;private&quot;. You can
 specify a read-only community string, usually &quot;public&quot;, if you do not
 require killpower support. If the community string is omitted, apcupsd will
-attempt to autotedect by trying &quot;private&quot; and &quot;public&quot;.
+attempt to autodetect by trying &quot;private&quot; and &quot;public&quot;.
 (optional, default: autodetect).</p>
 </li>
 </ul>
@@ -5111,7 +5111,7 @@ may have permissions problems accessing the serial port.</li>
 <li>You may have cabling problems, either with an incorrect cable,
 or the incorrect cable specification directive in the configuration
 file.</li>
-<li>You may have a problem with the /etc/apcupsd/acpupsd.conf file.
+<li>You may have a problem with the /etc/apcupsd/apcupsd.conf file.
 For example, check that you have specified the correct type of UPS
 and the correct networking directives. For more details, see the
 <a class="reference internal" href="#after-installation">After Installation</a> section.</li>
@@ -8170,7 +8170,7 @@ client-&gt;server and server-&gt;client messages follow this format.</p>
 <ol class="arabic simple">
 <li>&quot;status&quot; - The status command requests that the server send a copy of all
 status values, in the form displayed by apcaccess. After the client sends the
-&quot;status&quot; command, the server will reply with a series of messges, each one
+&quot;status&quot; command, the server will reply with a series of messages, each one
 containing one line of apcaccess status data. The end of the command series
 is indicated by an empty message (length of 0).</li>
 <li>&quot;events&quot; - The events command operates the same as &quot;status&quot; except the

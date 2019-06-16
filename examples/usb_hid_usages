@@ -966,7 +966,7 @@
 	0x69	ShutdownImminent
 	0x6A	VendorSpecificAnswerValid
 	0x6B	SwitchOn/Off
-	0x6C	Switcheble
+	0x6C	Switchable
 	0x6D	Used
 	0x6E	Boost
 	0x6F	Buck
@@ -1004,14 +1004,14 @@
 	0x2E	PrimaryBattery
 	0x2F	ChargeController
 	0x40	TerminateCharge
-	0x41	TermminateDischarge
+	0x41	TerminateDischarge
 	0x42	BelowRemainingCapacityLimit
 	0x43	RemainingTimeLimitExpired
 	0x44	Charging
 	0x45	Discharging
 	0x46	FullyCharged
 	0x47	FullyDischarged
-	0x48	ConditionningFlag
+	0x48	ConditioningFlag
 	0x49	AtRateOK
 	0x4A	SMBErrorCode
 	0x4B	NeedReplacement
@@ -1036,7 +1036,7 @@
 	0x86	SerialNumber
 	0x87	iManufacturerName
 	0x88	iDevicename
-	0x89	iDeviceChemistery
+	0x89	iDeviceChemistry
 	0x8A	iManufacturerData
 	0x8B	Rechargeable
 	0x8C	WarningCapacityLimit

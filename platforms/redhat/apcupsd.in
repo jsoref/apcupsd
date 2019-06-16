@@ -8,7 +8,7 @@
 #
 APCPID=@PIDDIR@/apcupsd.pid
 
-# Source function libarary
+# Source function library
 . /etc/rc.d/init.d/functions
 
 case "$1" in

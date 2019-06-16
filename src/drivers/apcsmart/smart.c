@@ -15,7 +15,7 @@
 /*
  * Parts of the information below was taken from apcd.c & apcd.h
  *
- * Definitons file for APC SmartUPS daemon
+ * Definitions file for APC SmartUPS daemon
  *
  *  Copyright (c) 1995 Pavel Korensky
  *  All rights reserved
@@ -132,7 +132,7 @@ void ApcSmartUpsDriver::writechar(char a)
 
 /********************************************************************* 
  *
- * Send a charcter to the UPS and get
+ * Send a character to the UPS and get
  * its response. Returns a pointer to the response string.
  *
  */
@@ -630,7 +630,7 @@ bool ApcSmartUpsDriver::read_static_data()
 {
    char *answer;
 
-   /* Everything from here on down is non-volitile, that is
+   /* Everything from here on down is non-volatile, that is
     * we do not expect it to change while the UPS is running
     * unless we explicitly change it.
     */

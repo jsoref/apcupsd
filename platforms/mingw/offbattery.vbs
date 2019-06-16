@@ -1,4 +1,4 @@
-'///Wriiten by Ed Dondlinger 1/23/2009 - edondlinger@thepylegroup.com ///
+'///Written by Ed Dondlinger 1/23/2009 - edondlinger@thepylegroup.com ///
 
 '/// MODIFY THE VARIABLES LISTED BELOW IN THE "USER VARIABLES" SECTION.
 '/// THEN RENAME FILE WITHOUT THE ".example" SUFFIX.

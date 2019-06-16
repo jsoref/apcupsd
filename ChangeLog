@@ -118,7 +118,7 @@ Add output current to status display
 ------------------------------------------------------------------------
 r2356 | adk0212 | 2015-09-20 11:01:17 -0400 (Sun, 20 Sep 2015) | 3 lines
 
-Add support for displaying output currnent on MODBUS
+Add support for displaying output current on MODBUS
 - Also rename {REAL,APPARENT}_POWER usages to clarify that they represent percent-of-nominal
 
 ------------------------------------------------------------------------
@@ -222,7 +222,7 @@ Improvements to hosts.conf parsing logic
 r2336 | adk0212 | 2015-03-21 11:42:50 -0400 (Sat, 21 Mar 2015) | 3 lines
 
 CID17191 -  Uninitialized scalar field
-Not reall a defect as _commlost_time is always set before being used, but initialize it in constructor anyway for cleanliness
+Not really a defect as _commlost_time is always set before being used, but initialize it in constructor anyway for cleanliness
 
 ------------------------------------------------------------------------
 r2335 | adk0212 | 2015-03-21 11:39:46 -0400 (Sat, 21 Mar 2015) | 3 lines
@@ -804,7 +804,7 @@ Remove unused variable from conv_unix_to_win32_path()
 ------------------------------------------------------------------------
 r2225 | adk0212 | 2014-11-03 22:12:11 -0500 (Mon, 03 Nov 2014) | 2 lines
 
-Fix strict alising issue in apclibnis by implementing FIONBIO ioctl in compat instead of using macro
+Fix strict aliasing issue in apclibnis by implementing FIONBIO ioctl in compat instead of using macro
 
 ------------------------------------------------------------------------
 r2224 | adk0212 | 2014-11-03 21:44:54 -0500 (Mon, 03 Nov 2014) | 3 lines
@@ -1435,7 +1435,7 @@ r2110 | adk0212 | 2014-03-27 22:36:41 -0400 (Thu, 27 Mar 2014) | 4 lines
 
 Add support for pattern matching and apcupsd.conf parsing in apcaccess
 Also some code cleanup. 
-Idea and most of the code courtesty of Timothe Litt <litt@acm.org>
+Idea and most of the code courtesy of Timothe Litt <litt@acm.org>
 
 ------------------------------------------------------------------------
 r2109 | adk0212 | 2014-03-26 19:01:57 -0400 (Wed, 26 Mar 2014) | 2 lines
@@ -1462,7 +1462,7 @@ All uses of astrncat were incorrect (passing full buffer size instead of remaini
 r2105 | adk0212 | 2014-03-24 22:52:10 -0400 (Mon, 24 Mar 2014) | 3 lines
 
 Global replace of astrcpy with strlcpy
-Same behavor (aside from return value) but strlcpy is standardized
+Same behavior (aside from return value) but strlcpy is standardized
 
 ------------------------------------------------------------------------
 r2104 | adk0212 | 2014-03-24 22:47:47 -0400 (Mon, 24 Mar 2014) | 4 lines
@@ -1896,7 +1896,7 @@ r2025 | adk0212 | 2011-11-21 22:03:53 -0500 (Mon, 21 Nov 2011) | 4 lines
 
 Fix failure to compile when libsupc++ is not available. Need to link using
 g++ when not linking libsupc++. If linking with libsupc++ use gcc to avoid
-gettting libstdc++ linked by default. Fixes build on stock Mandriva 2011.
+getting libstdc++ linked by default. Fixes build on stock Mandriva 2011.
 
 ------------------------------------------------------------------------
 r2024 | adk0212 | 2011-11-21 21:23:39 -0500 (Mon, 21 Nov 2011) | 2 lines
@@ -1982,7 +1982,7 @@ Remove vendor check from BSD and Generic USB drivers. HP OEMed some UPSes
 from APC so they are compatible with apcupsd in spite of carrying an HP
 vendor id. We might as well try to talk to anything a user connects. We
 will still fail if the required UPS application collection is not found
-and that is a better indicator of potential compatiblity.
+and that is a better indicator of potential compatibility.
 
 ------------------------------------------------------------------------
 r2010 | fleetworks | 2011-10-02 09:51:45 -0400 (Sun, 02 Oct 2011) | 2 lines
@@ -3796,7 +3796,7 @@ Minor fixes to apctest section. This needs major updates eventually.
 ------------------------------------------------------------------------
 r1678 | adk0212 | 2009-05-02 19:20:42 -0400 (Sat, 02 May 2009) | 2 lines
 
-Bring in a shortened version of the supportedupses text.
+Bring in a shortened version of the supported upses text.
 
 ------------------------------------------------------------------------
 r1677 | adk0212 | 2009-05-02 18:37:30 -0400 (Sat, 02 May 2009) | 2 lines
@@ -4153,7 +4153,7 @@ r1620 | skoona | 2008-07-12 22:32:21 -0400 (Sat, 12 Jul 2008) | 16 lines
 
 Fix two of two: KDE issue,
 because of the _iconify() api issue, _hide() was chosen.  _
-hide() presents a useability issue where its possible hide all windows
+hide() presents a usability issue where its possible hide all windows
 in such a way that no artifact is visible for you to use to restore a window.
 
 This is caused by the use of gtk_widget_hide() instead of gtk_window_iconify();
@@ -4170,7 +4170,7 @@ James,
 ------------------------------------------------------------------------
 r1619 | skoona | 2008-07-12 20:23:35 -0400 (Sat, 12 Jul 2008) | 2 lines
 
-Part two of the kde fix failed.  Icon-mode works fine.  Window mode can find itself without a takslist entry and effecctively invisible with no way to recall the active program.
+Part two of the kde fix failed.  Icon-mode works fine.  Window mode can find itself without a tasklist entry and effectively invisible with no way to recall the active program.
 
 ------------------------------------------------------------------------
 r1618 | adk0212 | 2008-07-12 15:13:56 -0400 (Sat, 12 Jul 2008) | 2 lines
@@ -4391,7 +4391,7 @@ New Makefile for examples/ and source fixes to build with C++ compiler.
 ------------------------------------------------------------------------
 r1565 | adk0212 | 2008-05-10 20:10:48 -0400 (Sat, 10 May 2008) | 2 lines
 
-Micor cleanups: Rename 'INST' to 'COPY'. Remove extraneous semicolons.
+Micro cleanups: Rename 'INST' to 'COPY'. Remove extraneous semicolons.
 
 ------------------------------------------------------------------------
 r1564 | adk0212 | 2008-05-10 20:07:52 -0400 (Sat, 10 May 2008) | 5 lines
@@ -4842,7 +4842,7 @@ Bump version to 3.14.2.
 r1461 | adk0212 | 2007-09-10 19:09:49 -0400 (Mon, 10 Sep 2007) | 5 lines
 
 Prefer FEATURE reports over INPUT reports when searching for usages. This
-will fix compatiblity with BackUPS LCD models which have present but non-
+will fix compatibility with BackUPS LCD models which have present but non-
 functional INPUT reports. It may break compatibility with other models, so
 fingers are crossed.
 
@@ -4899,7 +4899,7 @@ Redraw tray icons politely after an Explorer crash.
 r1452 | adk0212 | 2007-08-05 17:31:56 -0400 (Sun, 05 Aug 2007) | 5 lines
 
 Fix bug with multi-threaded net_open() calls. net_open() was using a global
-buffer for the destination address. Yikes! Bug manifestied itself in
+buffer for the destination address. Yikes! Bug manifested itself in
 apctray with multiple monitors occasionally (and timing-dependently)
 pointing to the wrong UPS.
 
@@ -5425,7 +5425,7 @@ Move modified tray menu code back to wintray.cpp. Misc cleanups to wintray.
 ------------------------------------------------------------------------
 r1357 | adk0212 | 2007-06-01 20:12:56 -0400 (Fri, 01 Jun 2007) | 2 lines
 
-Cleanup of winabout, winevents, and winstat. Everthing compiles again.
+Cleanup of winabout, winevents, and winstat. Everything compiles again.
 
 ------------------------------------------------------------------------
 r1356 | adk0212 | 2007-05-31 20:11:52 -0400 (Thu, 31 May 2007) | 7 lines
@@ -5490,7 +5490,7 @@ r1344 | adk0212 | 2007-05-01 20:26:52 -0400 (Tue, 01 May 2007) | 10 lines
 
 Rewrite device opening logic. The new logic works as follows:
    - If user specifies a DEVICE, we will open that device and that device
-     only. There is no fallback to autodetect. This is generaly what users
+     only. There is no fallback to autodetect. This is generally what users
      expect when they explicitly give DEVICE.
    - If no DEVICE is specified, we autodetect as before. Furthermore, if
      we lose the connection to the device, we prefer to re-open the same

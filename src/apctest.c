@@ -894,7 +894,7 @@ static void smart_calibration(void)
    time_t start_time;
 
    pmsg("First ensure that we have a good link and \n"
-        "that the UPS is functionning normally.\n");
+        "that the UPS is functioning normally.\n");
    pmsg("Simulating UPSlinkCheck ...\n");
 
    tcflush(ups->fd, TCIOFLUSH);
@@ -2398,7 +2398,7 @@ static void parse_eeprom_cmds(char *eprom, char locale)
       }
 
       cmd[ncmd].cmd = c;           /* store command */
-      cmd[ncmd].size = s;          /* chare length of each value */
+      cmd[ncmd].size = s;          /* char length of each value */
       cmd[ncmd].num = n;           /* number of values */
 
       strncpy(cmd[ncmd].cmdvals, p, n * s);     /* save values */
@@ -2600,7 +2600,7 @@ static void modbus_get_self_test_result(void)
       if (uint & BTS_INVALID_STATE)
          pmsg(" (INVALID STATE)");
       else if (uint & BTS_INTERNAL_FAULT)
-         pmsg(" (INTERNAL FAUILT)");
+         pmsg(" (INTERNAL FAULT)");
       else if (uint & BTS_STATE_OF_CHARGE)
          pmsg(" (STATE_OF_CHARGE)");
 

@@ -18,9 +18,9 @@ details. */
 #define TIOCINQ         0x541B
 
 /* TIOCINQ is utilized instead of FIONREAD which has been
-accupied for other purposes under CYGWIN.
+occupied for other purposes under CYGWIN.
 Other UNIX ioctl requests has been omited because
-effects of their work one can achive by standard
+effects of their work one can achieve by standard
 POSIX commands */
 
 #define TIOCSBRK        0x5427

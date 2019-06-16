@@ -2,7 +2,7 @@
  * libsupc++fix.cpp
  *
  * Workaround for broken libsupc++ on FreeBSD 5.x and early 6.x.
- * FreeBSD 5.x and early 6.x inadvertantly left out some critical
+ * FreeBSD 5.x and early 6.x inadvertently left out some critical
  * files from libsupc++.a. See FreeBSD PR 99702:
  * <http://www.freebsd.org/cgi/query-pr.cgi?pr=99702>
  *

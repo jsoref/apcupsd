@@ -115,7 +115,7 @@ svnclean:
 all-subdirs: $(foreach subdir,$(SUBDIRS),$(subdir)_DIR)
 
 # Echo with no newline
-# Pipline here is silly, but should be more portable 
+# Pipeline here is silly, but should be more portable 
 # than 'echo -n' or 'echo ...\c'. Cannot use autoconf
 # to figure this out since 'make install' may be run
 # with root's shell when ./configure was run with user's 

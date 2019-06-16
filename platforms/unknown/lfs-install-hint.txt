@@ -28,7 +28,7 @@ TABLE OF CONTENTS
 =================
 
 Apcupsd is useful for controlling American Power Conversion's (APC)
-uninterruptiple power supplies (UPS).  Apcupsd monitors the UPS and during a
+uninterruptible power supplies (UPS).  Apcupsd monitors the UPS and during a
 power loss, informs the system users of the failure, and if power is not 
 restored, safely shuts down the system.  The Apcupsd manual (available on line
 at http://www.sibbald.com/apcupsd/manual/index.html or with the software)
@@ -231,7 +231,7 @@ ln -s ../init.d/apcupsd K990apcupsd
 ================
 
 Our generic configure in  3.1 above placed the configuration file in
-/etc/apcupsd.  This file is called apcupsd.conf.  Pleae consult the apcupsd
+/etc/apcupsd.  This file is called apcupsd.conf.  Please consult the apcupsd
 manual to determine the settings for your system and APC model UPS.
 
 ================
