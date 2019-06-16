@@ -313,7 +313,7 @@ class UPSINFO {
    char firmrev[20];               /* firmware revision */
    char upsname[UPSNAMELEN];       /* UPS internal name */
    char upsmodel[MAXSTRING];       /* ups model number */
-   char sensitivity[8];            /* sensitivity to line fluxuations */
+   char sensitivity[8];            /* sensitivity to line fluctuations */
    char beepstate[8];              /* when to beep on power failure. */
    char eprom[500];                /* Eprom values */
 
