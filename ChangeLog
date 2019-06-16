@@ -5425,7 +5425,7 @@ Move modified tray menu code back to wintray.cpp. Misc cleanups to wintray.
 ------------------------------------------------------------------------
 r1357 | adk0212 | 2007-06-01 20:12:56 -0400 (Fri, 01 Jun 2007) | 2 lines
 
-Cleanup of winabout, winevents, and winstat. Everthing compiles again.
+Cleanup of winabout, winevents, and winstat. Everything compiles again.
 
 ------------------------------------------------------------------------
 r1356 | adk0212 | 2007-05-31 20:11:52 -0400 (Thu, 31 May 2007) | 7 lines
