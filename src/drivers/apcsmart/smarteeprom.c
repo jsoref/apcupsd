@@ -420,7 +420,7 @@ int ApcSmartUpsDriver::change_ups_eeprom_item(const char *title, const char cmd,
 
 
 /*
- * Set new values in EEPROM memmory.  Change the UPS EEPROM.
+ * Set new values in EEPROM memory.  Change the UPS EEPROM.
  */
 void ApcSmartUpsDriver::change_extended()
 {
