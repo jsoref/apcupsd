@@ -68,7 +68,7 @@ gapcmon (0.8.2-0) stable; urgency=normal
   to append the timestamp rather than prepend it.  This corrected the
   presentation of the timestamp to the user in reverse order.
 - Constrained the tooltip to present only for actual data points.  It
-  was presenting for non-existant data points resulting in time_zero
+  was presenting for nonexistent data points resulting in time_zero
   display's ( dec 31, 1970...)
 
 gapcmon (0.8.1-0) stable; urgency=normal
