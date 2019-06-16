@@ -1004,7 +1004,7 @@
 	0x2E	PrimaryBattery
 	0x2F	ChargeController
 	0x40	TerminateCharge
-	0x41	TermminateDischarge
+	0x41	TerminateDischarge
 	0x42	BelowRemainingCapacityLimit
 	0x43	RemainingTimeLimitExpired
 	0x44	Charging
