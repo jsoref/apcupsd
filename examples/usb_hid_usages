@@ -966,7 +966,7 @@
 	0x69	ShutdownImminent
 	0x6A	VendorSpecificAnswerValid
 	0x6B	SwitchOn/Off
-	0x6C	Switcheble
+	0x6C	Switchable
 	0x6D	Used
 	0x6E	Boost
 	0x6F	Buck
