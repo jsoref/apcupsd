@@ -894,7 +894,7 @@ static void smart_calibration(void)
    time_t start_time;
 
    pmsg("First ensure that we have a good link and \n"
-        "that the UPS is functionning normally.\n");
+        "that the UPS is functioning normally.\n");
    pmsg("Simulating UPSlinkCheck ...\n");
 
    tcflush(ups->fd, TCIOFLUSH);
