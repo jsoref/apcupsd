@@ -28,7 +28,7 @@ TABLE OF CONTENTS
 =================
 
 Apcupsd is useful for controlling American Power Conversion's (APC)
-uninterruptiple power supplies (UPS).  Apcupsd monitors the UPS and during a
+uninterruptible power supplies (UPS).  Apcupsd monitors the UPS and during a
 power loss, informs the system users of the failure, and if power is not 
 restored, safely shuts down the system.  The Apcupsd manual (available on line
 at http://www.sibbald.com/apcupsd/manual/index.html or with the software)
