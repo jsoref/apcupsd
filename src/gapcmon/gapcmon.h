@@ -370,7 +370,7 @@ typedef struct _System_Control_Data {
    GtkTreeView *prefs_treeview;
    GtkTreeSelection *prefs_select;
    guint prefs_last_monitor;       /* assigning monitor numbers */
-   gint cb_last_monitor_deleted;   /* overide gconf inconsistency on kde */
+   gint cb_last_monitor_deleted;   /* override gconf inconsistency on kde */
 
    GtkTreeModel *monitor_model;    /* GtkListStore */
    GtkTreeView *monitor_treeview;
