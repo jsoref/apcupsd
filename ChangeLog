@@ -1896,7 +1896,7 @@ r2025 | adk0212 | 2011-11-21 22:03:53 -0500 (Mon, 21 Nov 2011) | 4 lines
 
 Fix failure to compile when libsupc++ is not available. Need to link using
 g++ when not linking libsupc++. If linking with libsupc++ use gcc to avoid
-gettting libstdc++ linked by default. Fixes build on stock Mandriva 2011.
+getting libstdc++ linked by default. Fixes build on stock Mandriva 2011.
 
 ------------------------------------------------------------------------
 r2024 | adk0212 | 2011-11-21 21:23:39 -0500 (Mon, 21 Nov 2011) | 2 lines
