@@ -2600,7 +2600,7 @@ static void modbus_get_self_test_result(void)
       if (uint & BTS_INVALID_STATE)
          pmsg(" (INVALID STATE)");
       else if (uint & BTS_INTERNAL_FAULT)
-         pmsg(" (INTERNAL FAUILT)");
+         pmsg(" (INTERNAL FAULT)");
       else if (uint & BTS_STATE_OF_CHARGE)
          pmsg(" (STATE_OF_CHARGE)");
 
