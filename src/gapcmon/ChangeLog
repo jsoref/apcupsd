@@ -100,7 +100,7 @@ gapcmon (0.6.1-0) stable; urgency=normal
 - Updated the gapc_monitor_update() in gapcmon_core.c to handle
   the 0-100 percent scale for charted data points.  LINEV uses
   HITRANS as scale and defaults to 120:230, BATTV uses 12:24 unless 
-  NOMBATTV is present, and LOADPCT, TIMELEFT, are inversly related to
+  NOMBATTV is present, and LOADPCT, TIMELEFT, are inversely related to
   each other.  BCHARGE values are taken as is.
 - Updated the gapc_util_point_filter_set() in gapcmon_core.c to handle
   out of range graphing data points by defaulting them to 108 percent
