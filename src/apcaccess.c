@@ -122,7 +122,7 @@ void usage()
                        "[-p <parameter-name>] [-u] [<command>] [<host>[:<port>]]\n"
       "\n"
       " -f  Load default host,port from given conf file (default: %s)\n"
-      " -h  Connect to host and port (supercedes conf file)\n"
+      " -h  Connect to host and port (supersedes conf file)\n"
       " -p  Return only the value of the named parameter rather than all parameters and values\n"
       " -u  Strip unit labels\n"
       "\n"
