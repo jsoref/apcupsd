@@ -634,7 +634,7 @@ bool BsdUsbUpsDriver::check_state()
              * Check if we received fewer bytes of data from the UPS than we
              * should have. If so, ignore the report since we can't process it
              * reliably. If we go ahead and try to process it we may get 
-             * sporradic bad readings. UPSes we've seen this issue on so far 
+             * sporadic bad readings. UPSes we've seen this issue on so far 
              * include:
              *
              *    "Back-UPS CS 650 FW:817.v7 .I USB FW:v7"
