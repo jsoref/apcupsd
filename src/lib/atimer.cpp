@@ -96,7 +96,7 @@ void atimer::body()
       }
       else
       {
-         // Condvar was signaled or we got a spurrious wakeup
+         // Condvar was signaled or we got a spurious wakeup
          // In either case, we just ignore it and loop around
       }
    }

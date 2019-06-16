@@ -157,7 +157,7 @@ NEW FEATURES
 
 BUG FIXES
 
-  * Fix missing status and spurrious incorrect status on newer BackUPS CS
+  * Fix missing status and spurious incorrect status on newer BackUPS CS
     models using USB interface.
 
   * USB compatibility fixes for Mac OS X Lion
