@@ -130,7 +130,7 @@ gapcmon (0.5.7-3) stable; urgency=normal
 
 gapcmon (0.5.7-2) stable; urgency=normal
 * Thu Mar 16 2006 James Scott, Jr. <skoona@users.sourceforge.net>
-- Modified gpanel_apcmon.c to handle an unexpected intial state issue
+- Modified gpanel_apcmon.c to handle an unexpected initial state issue
   and some stalled Icon updates issue.
 - none-enabled relates to the very first execution without
   gconf2 schemas installed to supply defaults.  This resulted in
@@ -183,7 +183,7 @@ gapcmon (0.5.3) stable; urgency=normal
     to specify the number of seconds between data refreshes.
  ** Tweaked the label alignments in the Information page in 
     an attempt to reduce the visual jitter during and data refresh
- ** Reworked the refresh button logic to reuse the intial timer
+ ** Reworked the refresh button logic to reuse the initial timer
     routine.  this guarantees that every button press will be honored
     even though the network thread may be busy collecting data.  The
     refresh button now retries until successful.
@@ -235,7 +235,7 @@ gapcmon (0.5.3) stable; urgency=normal
     to specify the number of seconds between data refreshes.
  ** Tweaked the label alignments in the Information page in 
     an attempt to reduce the visual jitter during and data refresh
- ** Reworked the refresh button logic to reuse the intial timer
+ ** Reworked the refresh button logic to reuse the initial timer
     routine.  this guarantees that every button press will be honored
     even though the network thread may be busy collecting data.  The
     refresh button now retries until successful.

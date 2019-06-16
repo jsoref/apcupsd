@@ -10,7 +10,7 @@
    getline
 }
 # We insert our code just before this line
-/^# Set system console back to intial value/ {
+/^# Set system console back to initial value/ {
    print "# See if this is a powerfail situation.				# ***apcupsd***"
    print "if [ -f @PWRFAILDIR@/powerfail ]; then				# ***apcupsd***"
    print "   echo										# ***apcupsd***"
