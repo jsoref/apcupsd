@@ -36,7 +36,7 @@
  *    8/5 LoadPct (inc/dec)   (use numeric keypad)
  *    9/6 TimeLeft (inc/dec)  (use numeric keypad)
  *
- * Some keypress commands produce procotol events. For example,
+ * Some keypress commands produce protocol events. For example,
  * toggling on/off battery changes the status variable and also
  * issues '!' and '$' "interrupt" events.
  */
