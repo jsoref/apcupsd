@@ -5490,7 +5490,7 @@ r1344 | adk0212 | 2007-05-01 20:26:52 -0400 (Tue, 01 May 2007) | 10 lines
 
 Rewrite device opening logic. The new logic works as follows:
    - If user specifies a DEVICE, we will open that device and that device
-     only. There is no fallback to autodetect. This is generaly what users
+     only. There is no fallback to autodetect. This is generally what users
      expect when they explicitly give DEVICE.
    - If no DEVICE is specified, we autodetect as before. Furthermore, if
      we lose the connection to the device, we prefer to re-open the same
