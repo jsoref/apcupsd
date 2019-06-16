@@ -9,7 +9,7 @@ MODBUS driver, libusb now requires a patch...see below.]
 To build the most compatible apcupsd binary package possible, we must...
 
 * Build all dependent libraries static to ensure no extra dylibs are needed on
-  the taget machine
+  the target machine
 * Target a recent SDK so modern features like Notification Center will work
 * Specify an older minimum version (10.5) so binary will be runnable on older
   systems (although possibly with certain capabilities disabled)
