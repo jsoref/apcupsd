@@ -2638,7 +2638,7 @@ static void sknet_net_shutdown (PSKCOMM psk)
 /*
  * performs a complete NIS transaction by sending cmd and
  * loading each result line into the pch array.
- * also, refreshes status key/value pairs in hastable.
+ * also, refreshes status key/value pairs in hashtable.
  * return error = 0,  or number of lines read from network
  */
 static gint gapc_net_transaction_service(PGAPC_MONITOR pm, gchar * cp_cmd, gchar ** pch)
