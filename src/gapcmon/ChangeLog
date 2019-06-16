@@ -78,7 +78,7 @@ gapcmon (0.8.1-0) stable; urgency=normal
 
 gapcmon (0.7.0-0) stable; urgency=normal
 * Thru Apr 18 2006 James Scott, Jr. <skoona@users.sourceforge.net>
-- Rewrite to include desktop independant features completed.
+- Rewrite to include desktop independent features completed.
 - This module replace all other interations of gapcmon: including
   gapc, gpanel, gpanel_apcmon, etc.
 
