@@ -630,7 +630,7 @@ bool ApcSmartUpsDriver::read_static_data()
 {
    char *answer;
 
-   /* Everything from here on down is non-volitile, that is
+   /* Everything from here on down is non-volatile, that is
     * we do not expect it to change while the UPS is running
     * unless we explicitly change it.
     */
