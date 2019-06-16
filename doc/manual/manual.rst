@@ -3025,7 +3025,7 @@ from the source cgi directory as follows:
 
 As with multimon, quite a few lines of html should then be displayed.
 
-upsfstatus.cgi
+upsfstats.cgi
 ~~~~~~~~~~~~~~
 
 If you
