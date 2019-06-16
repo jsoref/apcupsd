@@ -126,7 +126,7 @@ enum {
    CI_DSHUTD,                      /* Shutdown delay */
    CI_LTRANS,                      /* Low transfer voltage */
    CI_HTRANS,                      /* High transfer voltage */
-   CI_RETPCT,                      /* Return percent threshhold */
+   CI_RETPCT,                      /* Return percent threshold */
    CI_DALARM,                      /* Alarm delay */
    CI_DLBATT,                      /* low battery warning, mins */
    CI_IDEN,                        /* UPS Identification (name) */
