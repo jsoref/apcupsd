@@ -449,7 +449,7 @@ fi
 * Sat Aug 19 2006 D. Scott Barninger <barninger at fairfieldcomputers.com>
 - add third party packager tag
 * Fri May 05 2006 D. Scott Barninger <barninger at fairfieldcomputers.com>
-- update build requirments to include ghostscript
+- update build requirements to include ghostscript
 - update fedora_core build requirements to include latex2html
 * Sun Apr 23 2006 D. Scott Barninger <barninger at fairfieldcomputers.com>
 - add pdf manual to doc package
