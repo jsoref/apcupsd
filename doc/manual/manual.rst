@@ -2379,7 +2379,7 @@ following variables:
     This is the status of the UPS and it should
     normally be ``ONLINE``.
 
-A very disturbing tendance is for some of the newer (Mar 2004) RS
+A very disturbing tendency is for some of the newer (Mar 2004) RS
 and ES UPSes to have no Voltage information. This is an annoying bug, 
 but not serious. On the other hand, some of those UPSes now have no
 battery charge information ``BCHARGE``. If ``BCHARGE`` is zero in your
