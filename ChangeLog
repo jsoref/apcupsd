@@ -4170,7 +4170,7 @@ James,
 ------------------------------------------------------------------------
 r1619 | skoona | 2008-07-12 20:23:35 -0400 (Sat, 12 Jul 2008) | 2 lines
 
-Part two of the kde fix failed.  Icon-mode works fine.  Window mode can find itself without a takslist entry and effectively invisible with no way to recall the active program.
+Part two of the kde fix failed.  Icon-mode works fine.  Window mode can find itself without a tasklist entry and effectively invisible with no way to recall the active program.
 
 ------------------------------------------------------------------------
 r1618 | adk0212 | 2008-07-12 15:13:56 -0400 (Sat, 12 Jul 2008) | 2 lines
