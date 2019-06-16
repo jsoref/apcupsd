@@ -15,7 +15,7 @@
 
 # UPSNAME xxx
 #   Use this to give your UPS a name in log files and such. This
-#   is particulary useful if you have multiple UPSes. This does not
+#   is particularly useful if you have multiple UPSes. This does not
 #   set the EEPROM. It should be 8 characters or less.
 #UPSNAME
 
