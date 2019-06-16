@@ -222,7 +222,7 @@ Improvements to hosts.conf parsing logic
 r2336 | adk0212 | 2015-03-21 11:42:50 -0400 (Sat, 21 Mar 2015) | 3 lines
 
 CID17191 -  Uninitialized scalar field
-Not reall a defect as _commlost_time is always set before being used, but initialize it in constructor anyway for cleanliness
+Not really a defect as _commlost_time is always set before being used, but initialize it in constructor anyway for cleanliness
 
 ------------------------------------------------------------------------
 r2335 | adk0212 | 2015-03-21 11:39:46 -0400 (Sat, 21 Mar 2015) | 3 lines
