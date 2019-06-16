@@ -5623,7 +5623,7 @@ static PLGRAPH lg_graph_create (GtkWidget * box, gint width, gint height)
      * These must be set before the first drawing_area configure event 
      */
     lg_graph_set_chart_title  (plg, "Waiting for Update");
-    lg_graph_set_y_label_text (plg, "Precentage of 100% normal");
+    lg_graph_set_y_label_text (plg, "Percentage of 100% normal");
     lg_graph_set_x_label_text (plg, "Waiting for Update");
 
     g_snprintf (plg->ch_tooltip_text, sizeof (plg->ch_tooltip_text), "%s",
