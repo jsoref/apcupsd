@@ -4153,7 +4153,7 @@ r1620 | skoona | 2008-07-12 22:32:21 -0400 (Sat, 12 Jul 2008) | 16 lines
 
 Fix two of two: KDE issue,
 because of the _iconify() api issue, _hide() was chosen.  _
-hide() presents a useability issue where its possible hide all windows
+hide() presents a usability issue where its possible hide all windows
 in such a way that no artifact is visible for you to use to restore a window.
 
 This is caused by the use of gtk_widget_hide() instead of gtk_window_iconify();
