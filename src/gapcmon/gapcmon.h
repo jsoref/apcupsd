@@ -216,7 +216,7 @@ typedef struct _LGRAPH_SERIES {
     gdouble     d_max_value;
     gdouble     d_min_value;
     gdouble    *lg_point_dvalue;    /* array of doubles y values zero based, x = index */
-    GdkPoint   *point_pos;      /* last gdk position each point - recalc on evey draw */
+    GdkPoint   *point_pos;      /* last gdk position each point - recalc on every draw */
 } LG_SERIES, *PLG_SERIES;
 
 typedef struct _LGRAPH_RANGES {
