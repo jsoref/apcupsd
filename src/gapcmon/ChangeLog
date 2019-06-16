@@ -89,7 +89,7 @@ gapcmon (0.6.2-0) stable; urgency=normal
 - Added a paned window to help user manage size of icons and notebooks
 - Attempted to implement true alphabetic sort of icons labels, by adding
   label text to main.window icons ( not working the why I would like )
-- Reviewed gdk_threads_enter() useage and removed duplicates from
+- Reviewed gdk_threads_enter() usage and removed duplicates from
   gtkglgraph.c in response to a user bug ( no x|y-labels on chart-N+1)  
 - Several routine consolidated or parameter-ized.
 
