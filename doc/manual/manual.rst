@@ -3109,7 +3109,7 @@ Many thanks go to Russell Kroll rkroll@exploits.org who wrote
 the CGI programs to work with his UPS Monitoring system named
 Network UPS Tools (NUT). Thanks also to Jonathan Benson 
 jbenson@technologist.com for initially
-adapting the upsstatus.cgi program to work with apcupsd.
+adapting the upsstats.cgi program to work with apcupsd.
 
 We have enhanced the bar graph program and hope that our changes
 can be useful to the original author in his project.
