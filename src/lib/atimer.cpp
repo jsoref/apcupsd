@@ -79,7 +79,7 @@ void atimer::body()
       rc = pthread_cond_timedwait(&_condvar, &_mutex, &_abstimeout);
       if (rc == ETIMEDOUT)
       {
-         // Timeout ocurred, invoke callback...
+         // Timeout occurred, invoke callback...
 
          // No longer running
          _started = false;

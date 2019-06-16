@@ -180,7 +180,7 @@ DWORD WINAPI BalloonMgr::Thread(LPVOID param)
          _this->unlock();
          break;
 
-      // Timeout ocurred
+      // Timeout occurred
       case WAIT_OBJECT_0 + 1:
          _this->lock();
 

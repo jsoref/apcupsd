@@ -522,7 +522,7 @@ void UsbUpsDriver::usb_process_value(int ci, USB_VALUE* uval)
    case CI_APCLineFailCause:
       Dmsg(100, "CI_APCLineFailCause=%d\n", uval->iValue);
       switch (uval->iValue) {
-      case 0:  /* No transfers have ocurred */
+      case 0:  /* No transfers have occurred */
          _ups->lastxfer = XFER_NONE;
          break;
       case 2:  /* High line voltage */
