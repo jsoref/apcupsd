@@ -1828,7 +1828,7 @@ script (/etc/rc.d/init.d/halt in the case of Red Hat Linux) and see
 if the final line that performs the halt or reboot contains the 
 ``-p`` option for powering down the computer. It should not with the
 logic used by apcupsd, but if it does, the ``-p`` option could cause
-your computer to power off while the UPS is still suppling power
+your computer to power off while the UPS is still supplying power
 (i.e. before the UPS kills the power). Depending on the setting of
 your BIOS, it may prevent your computer from restarting when the
 power returns. As already mentioned, this should not apply, but in
