@@ -389,7 +389,7 @@ MAJOR CHANGES
     
     NEW BUILD SYSTEM NOTES
       - GNU make is required. The configure script checks for this and tells
-        you how to invokve it (on some platforms it is 'gmake' instead of 
+        you how to invoke it (on some platforms it is 'gmake' instead of 
         'make').
       - Output during build is pretty-printed by default. To see more details,
         use 'make VERBOSE=1' for output similar to the old build system. For
