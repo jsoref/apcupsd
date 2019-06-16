@@ -147,7 +147,7 @@ Requires: glibc >= 2.3
 Apcupsd can be used for controlling most APC UPSes. During a
 power failure, apcupsd will inform the users about the power
 failure and that a shutdown may occur.  If power is not restored,
-a system shutdown will follow when the battery is exausted, a
+a system shutdown will follow when the battery is exhausted, a
 timeout (seconds) expires, or the battery runtime expires based
 on internal APC calculations determined by power consumption
 rates.  If the power is restored before one of the above shutdown
