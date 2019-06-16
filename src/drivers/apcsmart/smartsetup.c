@@ -1,5 +1,5 @@
 /*
- * smartrsetup.c
+ * smartsetup.c
  *
  * Functions to open/setup/close the device
  */
