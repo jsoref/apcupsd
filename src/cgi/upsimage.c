@@ -199,7 +199,7 @@ static void drawbattvolt(const char *battvolts, const char *nombattvs)
     battvolt = strtod(battvolts, NULL);
     nombattv = strtod(nombattvs, NULL);
 
-    /* NOTE, if you tweek minv and maxv, ensure that the difference
+    /* NOTE, if you tweak minv and maxv, ensure that the difference
      * is evenly divisible by 5 or the scales will be wrong!!!	 
      */
     switch ((int)nombattv) {
