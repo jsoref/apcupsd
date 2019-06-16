@@ -299,7 +299,7 @@ enum {
 #define LCKNOLOCK               3  /* lock file not needed: APC_NET */
 
 /* Generic defines for boolean return values. */
-#define SUCCESS                 0  /* Function successfull */
+#define SUCCESS                 0  /* Function successful */
 #define FAILURE                 1  /* Function failure */
 
 /* These seem unavoidable :-( */
