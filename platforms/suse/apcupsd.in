@@ -24,7 +24,7 @@ APCPID=@PIDDIR@/apcupsd.pid
 
 DISTVER=`cat /etc/SuSE-release | grep VERSION | cut -f 3 -d' '`
 
-# Source function libarary
+# Source function library
 . /etc/rc.status
 
 RETVAL=0

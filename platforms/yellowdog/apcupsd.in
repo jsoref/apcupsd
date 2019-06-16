@@ -10,7 +10,7 @@ APCPID=@PIDDIR@/apcupsd.pid
 
 DISTVER=`cat /etc/yellowdog-release | grep release | cut -f 5 -d ' '`
 
-# Source function libarary
+# Source function library
 . /etc/rc.d/init.d/functions
 
 case "$1" in
