@@ -393,7 +393,7 @@ fi
 - combined layout for usb/serial builds
 * Thu Jan 16 2003 Scott at fairfieldcomputers dot com
 - Update spec to new source layout
-- Added masterconnect and mastertimout to files section
+- Added masterconnect and mastertimeout to files section
 - Changed make install-apcupsd and make install-cgi to make install
 * Wed Sep 05 2001 kern at sibbald dot com
 - Applied very nice patch to this spec by Giulio Orsero <giulioo@pobox.com>
