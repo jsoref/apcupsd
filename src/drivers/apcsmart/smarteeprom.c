@@ -398,7 +398,7 @@ int ApcSmartUpsDriver::change_ups_eeprom_item(const char *title, const char cmd,
 
       /*
        * Check if we cycled back to the same value, but permit
-       * a duplicate because the L for sensitivy appears
+       * a duplicate because the L for sensitivity appears
        * twice in a row, i.e. H M L L.
        */
       if (strcmp(oldvalue, response) == 0 && i > 0)
