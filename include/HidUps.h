@@ -99,7 +99,7 @@ private:
    /*
     * Fetch the report descriptor from the device given an fd for the
     * device's control endpoint. Descriptor length is written to the
-    * rlen out paramter and a pointer to a malloc'ed buffer containing
+    * rlen out parameter and a pointer to a malloc'ed buffer containing
     * the descriptor is returned. Returns NULL on failure.
     */
    unsigned char *FetchReportDescr(int *rlen);

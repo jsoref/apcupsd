@@ -145,7 +145,7 @@ static const PAIRS table[] = {
    {"MINUTES",        match_int,   WHERE(runtime),     0},
    {"KILLDELAY",      match_int,   WHERE(killdelay),   0},
 
-   /* Configuration parmeters for network information server */
+   /* Configuration parameters for network information server */
    {"NETSERVER", match_index, WHERE(netstats),   onoroff},
    {"NISIP",     match_str,   WHERE(nisip),      SIZE(nisip)},
    {"NISPORT",   match_int,   WHERE(statusport), 0},
