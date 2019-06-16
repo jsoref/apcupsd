@@ -2826,7 +2826,7 @@ static gboolean gapc_util_treeview_get_iter_from_monitor(GtkTreeModel * model,
       gtk_tree_model_get(model, iter, GAPC_PREFS_MONITOR, &i_monitor, -1);
 
       if (i_monitor == i_value) {
-         /* set sucess flag */
+         /* set success flag */
          b_result = TRUE;
          break;
       }
@@ -2839,7 +2839,7 @@ static gboolean gapc_util_treeview_get_iter_from_monitor(GtkTreeModel * model,
 /*
  * Add a preferences record to the gconf instance and prefs_model
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_preferences_gconf_add_rec(PGAPC_CONFIG pcfg,
    gint i_monitor)
@@ -3732,7 +3732,7 @@ static PGAPC_PREFS_COLUMN gapc_panel_prefs_col_data_init(PGAPC_CONFIG pcfg,
  * Gets the gconf instance preferences for all monitors
  * and loads the prefs_model.
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_preferences_data_model_load(PGAPC_CONFIG pcfg)
 {
@@ -4988,7 +4988,7 @@ static void cb_panel_preferences_gconf_changed(GConfClient * client, guint cnxn_
 /*
  * Clears the gconf directory watchers for the control panel
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_gconf_destroy(PGAPC_CONFIG pcfg)
 {
@@ -5015,7 +5015,7 @@ static gboolean gapc_panel_gconf_destroy(PGAPC_CONFIG pcfg)
 /*
  * Set the gconf directory watchers for the control panel
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_gconf_watch(PGAPC_CONFIG pcfg)
 {
@@ -5057,7 +5057,7 @@ static gboolean gapc_panel_gconf_watch(PGAPC_CONFIG pcfg)
  * Gets the gconf instance preferences for this program
  * and init the control panel values.
  * returns FALSE on error
- * returns TRUE on sucess
+ * returns TRUE on success
 */
 static gboolean gapc_panel_gconf_init(PGAPC_CONFIG pcfg)
 {
