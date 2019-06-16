@@ -7,7 +7,7 @@
 #
 APCPID=@PIDDIR@/apcupsd.pid
 
-return="  Suceeded"
+return="  Succeeded"
 failed="  Failed"
 case "$1" in
     start)
