@@ -151,7 +151,7 @@ MINUTES 3
 #
 #  Note, if you have a Smart UPS, you will most likely want to disable
 #    this timer by setting it to zero. That way, you UPS will continue
-#    on batteries until either the % charge remaing drops to or below BATTERYLEVEL,
+#    on batteries until either the % charge remaining drops to or below BATTERYLEVEL,
 #    or the remaining battery runtime drops to or below MINUTES.  Of course,
 #    if you are testing, setting this to 60 causes a quick system shutdown
 #    if you pull the power plug.   
