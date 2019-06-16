@@ -65,7 +65,7 @@
  *  key /schemas/apps/gapcmon/controller/keys
  *              /apps/gapcmon/monitor/x/monitor-keys
  *  Where x is the internal monitor number.
- *  max monitors=unlimted or sizeof guint
+ *  max monitors=unlimited or sizeof guint
  *  Where key is the actual keyname like enabled, host_name, port_name, or
  *  refresh_interval, etc.
  * ************************************************************************** *
